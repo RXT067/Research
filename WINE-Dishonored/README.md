@@ -16,6 +16,5 @@ Noticed:
 Using to debug:
 
 ```
-WINEDEBUG=fixme-all,warn+dll WINEARCH=win64 WINEPREFIX=/home/kreyren/.wine-64 wine /home/kreyren/.wine-64/drive_c/Program\ Files\ \(x86\)/Steam/steamapps/common/Dishonored2/Dishonored2.exe 
-es\ \(x86\)/Steam/steamapps/common/Dishonored2.exe 
+WINEDEBUG='fixme-all,+dll' WINEARCH='win64' WINEPREFIX='/home/kreyren/.wine-64' wine /home/kreyren/.wine-64/drive_c/Program\ Files\ \(x86\)/Steam/steamapps/common/Dishonored2/Dishonored2.exe 
 ```
