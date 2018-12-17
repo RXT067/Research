@@ -37,3 +37,10 @@ There seems to be a splash screen video at the beggining of the game. Suspect mi
    - Unable to install `binkw32` in 64-bit wineprefix
 - Wine is unable to open `.bk2` (tested in explorer)
 ![BK2_WINE](https://i.imgur.com/9lwZgiY.jpg)
+
+
+### Lutris
+Installed lutris with lutris's winesteam and installed dihhonored 2 https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/Lutris_debug.log
+
+This is a known issues with fontconfig libraries that lutris uses in it's runtime.. Like to point out that i've reported this issue and the only response i've got it "This is Gentoo issue.." https://github.com/lutris/lutris/issues/1167
+
