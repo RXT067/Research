@@ -17,3 +17,9 @@ Using to debug:
 ```
 WINEDEBUG='fixme-all,+dll' WINEARCH='win64' WINEPREFIX='/home/kreyren/.wine-64' wine /home/kreyren/.wine-64/drive_c/Program\ Files\ \(x86\)/Steam/steamapps/common/Dishonored2/Dishonored2.exe 
 ```
+
+# Missing codec/player?
+- There is `$GAMEDIR/base/video` full of `file.bk2` 
+- `bk2` seems to be `Bink Video format` 
+- found `binkw32` in `winetricks` 
+   - Unable to install `binkw32` in 64-bit wineprefix
