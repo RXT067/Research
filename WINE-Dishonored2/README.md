@@ -7,6 +7,8 @@ Starts in blackscreen and becames unresponsive.
 
 Tried to add `corefonts` = same issue
 
+NEW RESULT: Reinstalled DXVK = Game crashes on startup.
+
 Noticed:
 ![ERROR](https://i.imgur.com/Wkv2dK5.jpg "ERROR")
 - Can't click on anything, resizing using meta+mouse2 on i3
