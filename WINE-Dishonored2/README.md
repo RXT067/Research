@@ -1,4 +1,5 @@
 # Dishonored 2 debug
+Wine bug: https://bugs.winehq.org/show_bug.cgi?id=46307#add_comment
 
 Installed `xact` + `d3dx9` via winetricks for 64-bit prefix
 
@@ -22,6 +23,8 @@ Suspect problem with libraries since game is able to launch on lutris. On Lutris
 Lutris Installer: https://lutris.net/games/install/6425/view
 
 Lutris uses "Lutris runtime" which is folder full of libraries that are provided with the installer if configured.
+
+Trying to greb loaded libs on lutris.
 
 ### Missing codec/player?
 There seems to be a splash screen video at the beggining of the game. Suspect missing codec/player
