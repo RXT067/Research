@@ -10,7 +10,7 @@ Tried to add `corefonts` = same issue
 Suspect problem with libraries since game is able to launch on lutris. On Lutris game has performance issues.
 
 Noticed:
-[ERROR]: https://i.imgur.com/Wkv2dK5.jpg "ERROR"
+![ERROR](https://i.imgur.com/Wkv2dK5.jpg "ERROR")
 
 Using to debug:
 
