@@ -52,3 +52,4 @@ Replaced them with gentoo's libs from <br />
 `/usr/lib32/libfontconfig.so.1`<br />
 `/usr/lib64/libfontconfig.so.1`<br />
 
+Fixed.. https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/PATCHED_LUTRIS_DEBUG.log
