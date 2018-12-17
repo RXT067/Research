@@ -1,0 +1,358 @@
+000b:fixme:winediag:start_process Wine Staging 4.0-rc2 is a testing version containing experimental patches.
+000b:fixme:winediag:start_process Please mention your exact version when filing bug reports on winehq.org.
+002b:fixme:heap:RtlSetHeapInformation 0x3b0000 0 0x23e730 4 stub
+002b:fixme:ntdll:EtwEventRegister ({5eec90ab-c022-44b2-a5dd-fd716a222a15}, 0x2711a4, 0x36f0b0, 0x36f0d0) stub.
+002b:fixme:ntdll:EtwEventSetInformation (deadbeef, 2, 0x367a1a, 43) stub
+002d:fixme:shcore:SetCurrentProcessExplicitAppUserModelID L"Valve.Steam.Client": stub
+002f:fixme:winhttp:get_system_proxy_autoconfig_url no support on this platform
+002f:fixme:winhttp:WinHttpDetectAutoProxyConfigUrl discovery via DHCP not supported
+002d:fixme:ntdll:EtwEventRegister ({47a9201e-73b0-42ce-9821-7e134361bc6f}, 0x3f007070, 0x3f04a1d8, 0x3f04a1d0) stub.
+002d:fixme:ntdll:EtwEventRegister ({58a9201e-73b0-42ce-9821-7e134361bc70}, 0x3f007070, 0x3f04a210, 0x3f04a208) stub.
+002d:fixme:ntdll:EtwEventRegister ({3fa9201e-73b0-43fe-9821-7e145359bc6f}, 0x3f007070, 0x3f04a1a0, 0x3f04a198) stub.
+002d:fixme:ntdll:EtwEventRegister ({1432afee-73b0-42ce-9821-7e134361b433}, 0x3f007070, 0x3f04a248, 0x3f04a240) stub.
+002d:fixme:ntdll:EtwEventRegister ({4372afee-73b0-42ce-9821-7e134361b519}, 0x3f007070, 0x3f04a280, 0x3f04a278) stub.
+002d:fixme:process:SetProcessShutdownParameters (00000100, 00000000): partial stub.
+002d:fixme:shcore:SetCurrentProcessExplicitAppUserModelID L"Valve.Steam.Client": stub
+002d:fixme:win:RegisterDeviceNotificationW (hwnd=0x20066, filter=0x33e5f4,flags=0x00000004) returns a fake device notification handle!
+0031:fixme:win:RegisterDeviceNotificationW (hwnd=0x2005a, filter=0x411fdec,flags=0x00000000) returns a fake device notification handle!
+002d:fixme:imm:ImmGetOpenStatus (0x9c0928): semi-stub
+002d:fixme:file:GetLongPathNameW UNC pathname L"\\\\?\\C:\\Program Files (x86)\\Steam\\bin\\cef\\cef.win7x64\\steamwebhelper.exe"
+002d:fixme:file:GetLongPathNameW UNC pathname L"\\\\?\\C:\\Program Files (x86)\\Steam\\bin\\cef\\cef.win7x64\\steamwebhelper.exe"
+002d:fixme:file:GetLongPathNameW UNC pathname L"\\\\?\\C:\\Program Files (x86)\\Steam\\logs\\cef_log.txt"
+002d:fixme:file:GetLongPathNameW UNC pathname L"\\\\?\\C:\\Program Files (x86)\\Steam\\logs\\cef_log.txt"
+002d:fixme:dwmapi:DwmSetWindowAttribute (0x1009e, 2, 0x33deb4, 4) stub
+002d:fixme:dwmapi:DwmExtendFrameIntoClientArea (0x1009e, 0x33dea4) stub
+002d:fixme:advapi:StopTraceA (0, "Steam Event Tracing", 0x33e1a4) stub
+002d:fixme:advapi:StartTraceA (0x33e230, "Steam Event Tracing", 0x33e1a4) stub
+002d:fixme:advapi:OpenTraceA 0x33df70: stub
+002d:fixme:advapi:EnableTrace (1, 0x10, 4, {22fb2cd6-0e7b-422b-a0c7-2fad1fd0e716}, cafe4242): stub
+002d:fixme:advapi:CloseTrace cafe4242: stub
+0036:fixme:advapi:ProcessTrace 0x4eddf98 1 (nil) (nil): stub
+0033:fixme:nvapi:unimplemented_stub function 0x694d52e is unimplemented!
+0033:fixme:nvapi:unimplemented_stub function 0x375dbd6b is unimplemented!
+0033:fixme:shcore:SetCurrentProcessExplicitAppUserModelID L"Valve.Steam.Client": stub
+0041:fixme:win:RegisterDeviceNotificationA (hwnd=0x100c2, filter=0x631f924,flags=0x00000004) returns a fake device notification handle!
+0042:fixme:wbemprox:wbem_locator_ConnectServer unsupported flags
+0042:fixme:wbemprox:client_security_SetBlanket 0xf706a938, 0x47fc428, 10, 0, (null), 3, 3, (nil), 0x00000000
+0042:fixme:wbemprox:client_security_Release 0xf706a938
+0019:fixme:mountmgr:harddisk_ioctl The DISK_PARTITION_INFO and DISK_DETECTION_INFO structures will not be filled
+0042:fixme:wbemprox:enum_class_object_Next timeout not supported
+0019:fixme:mountmgr:harddisk_ioctl The DISK_PARTITION_INFO and DISK_DETECTION_INFO structures will not be filled
+003b:fixme:iphlpapi:NotifyAddrChange (Handle 0x1f305ac, overlapped 0x1f305b0): stub
+0039:fixme:ntdll:NtLockFile I/O completion on lock not implemented yet
+0039:fixme:process:SetProcessShutdownParameters (00000100, 00000001): partial stub.
+0039:fixme:file:ReplaceFileW Ignoring flags 2
+0039:fixme:file:ReplaceFileW Ignoring flags 2
+0033:fixme:ntdll:NtLockFile I/O completion on lock not implemented yet
+0033:fixme:heap:RtlSetHeapInformation (nil) 1 (nil) 0 stub
+0033:fixme:ntdll:EtwEventRegister ({d2d578d9-2936-45b6-a09f-30e32715f42d}, 0x1c48a60, 0x5fec0e8, 0x60437c8) stub.
+0033:fixme:nls:GetThreadPreferredUILanguages 00000038, 0x23eb70, (nil) 0x23eb6c
+0033:fixme:nls:get_dummy_preferred_ui_language (0x38 0x23eb70 (nil) 0x23eb6c) returning a dummy value (current locale)
+0033:fixme:nls:GetThreadPreferredUILanguages 00000038, 0x23eb70, 0x681e920 0x23eb6c
+0033:fixme:nls:get_dummy_preferred_ui_language (0x38 0x23eb70 0x681e920 0x23eb6c) returning a dummy value (current locale)
+0033:fixme:winsock:WSALookupServiceBeginW (0x23e990 0x00000ff0 0x23ea10) Stub!
+0033:fixme:iphlpapi:NotifyAddrChange (Handle 0x23ec18, overlapped 0x681fdf8): stub
+004e:err:dc:CreateDCW no driver found for L"\\\\.\\DISPLAY2\\Monitor0"
+004e:fixme:win:RegisterTouchWindow (0x100e2 00000003): stub
+0033:fixme:win:RegisterDeviceNotificationW (hwnd=0x100ec, filter=0x23ea18,flags=0x00000000) returns a fake device notification handle!
+0033:fixme:win:RegisterDeviceNotificationW (hwnd=0x100ec, filter=0x23ea18,flags=0x00000000) returns a fake device notification handle!
+0033:fixme:win:GetDisplayConfigBufferSizes (0x2 0x23e674 0x23e670): stub
+0033:fixme:win:GetDisplayConfigBufferSizes (0x2 0x23e674 0x23e670): stub
+005e:fixme:file:FindFirstFileExW flags not implemented 0x00000002
+005e:fixme:file:FindFirstFileExW flags not implemented 0x00000002
+003b:fixme:winsock:WS_setsockopt SO_SNDBUF ignoring request to disable send buffering
+002d:fixme:dwmapi:DwmExtendFrameIntoClientArea (0x100f6, 0x33e2fc) stub
+0057:fixme:wlanapi:WlanEnumInterfaces (0x1, (nil), 0x850ed30) semi-stub
+0068:fixme:ntdll:NtFilterToken flags 2 unsupported
+0068:fixme:ntdll:NtFilterToken support for restricting sids not yet implemented
+0068:fixme:ntdll:NtSetInformationToken TokenIntegrityLevel stub!
+0068:fixme:ntdll:NtFilterToken flags 2 unsupported
+0068:fixme:ntdll:NtFilterToken support for restricting sids not yet implemented
+0068:fixme:ntdll:NtSetInformationToken TokenIntegrityLevel stub!
+0068:fixme:ntdll:NtSetInformationJobObject stub: 0x298 4 0x971ec58 4
+0068:fixme:ntdll:NtQueryInformationToken QueryInformationToken( ..., TokenAppContainerSid, ...) semi-stub
+004e:fixme:wgl:X11DRV_wglChoosePixelFormatARB unused pfAttribFList
+0068:fixme:ntdll:NtFilterToken flags 2 unsupported
+0068:fixme:ntdll:NtFilterToken support for restricting sids not yet implemented
+0068:fixme:ntdll:NtSetInformationToken TokenIntegrityLevel stub!
+0068:fixme:ntdll:NtFilterToken flags 2 unsupported
+0068:fixme:ntdll:NtFilterToken support for restricting sids not yet implemented
+0068:fixme:ntdll:NtSetInformationToken TokenIntegrityLevel stub!
+0068:fixme:ntdll:NtSetInformationJobObject stub: 0x284 4 0x971ec58 4
+0068:fixme:ntdll:NtQueryInformationToken QueryInformationToken( ..., TokenAppContainerSid, ...) semi-stub
+0068:fixme:ntdll:NtFilterToken flags 2 unsupported
+0068:fixme:ntdll:NtFilterToken support for restricting sids not yet implemented
+0068:fixme:ntdll:NtSetInformationToken TokenIntegrityLevel stub!
+0068:fixme:ntdll:NtFilterToken flags 2 unsupported
+0068:fixme:ntdll:NtFilterToken support for restricting sids not yet implemented
+0068:fixme:ntdll:NtSetInformationToken TokenIntegrityLevel stub!
+0068:fixme:ntdll:NtSetInformationJobObject stub: 0x284 4 0x971ec58 4
+0068:fixme:ntdll:NtQueryInformationToken QueryInformationToken( ..., TokenAppContainerSid, ...) semi-stub
+0068:fixme:ntdll:NtFilterToken flags 2 unsupported
+0068:fixme:ntdll:NtFilterToken support for restricting sids not yet implemented
+0068:fixme:ntdll:NtSetInformationToken TokenIntegrityLevel stub!
+0068:fixme:ntdll:NtFilterToken flags 2 unsupported
+0068:fixme:ntdll:NtFilterToken support for restricting sids not yet implemented
+0068:fixme:ntdll:NtSetInformationToken TokenIntegrityLevel stub!
+0068:fixme:ntdll:NtSetInformationJobObject stub: 0x284 4 0x971ec58 4
+0068:fixme:ntdll:NtQueryInformationToken QueryInformationToken( ..., TokenAppContainerSid, ...) semi-stub
+0068:fixme:ntdll:NtFilterToken flags 2 unsupported
+0068:fixme:ntdll:NtFilterToken support for restricting sids not yet implemented
+0068:fixme:ntdll:NtSetInformationToken TokenIntegrityLevel stub!
+0068:fixme:ntdll:NtFilterToken flags 2 unsupported
+0068:fixme:ntdll:NtFilterToken support for restricting sids not yet implemented
+0068:fixme:ntdll:NtSetInformationToken TokenIntegrityLevel stub!
+0068:fixme:ntdll:NtSetInformationJobObject stub: 0x284 4 0x971ec58 4
+0068:fixme:ntdll:NtQueryInformationToken QueryInformationToken( ..., TokenAppContainerSid, ...) semi-stub
+002d:fixme:dwrite:dwritefactory_CreateMonitorRenderingParams (0x1): monitor setting ignored
+003b:fixme:winsock:WS_setsockopt SO_SNDBUF ignoring request to disable send buffering
+0068:fixme:ntdll:NtFilterToken flags 2 unsupported
+0068:fixme:ntdll:NtFilterToken support for restricting sids not yet implemented
+0068:fixme:ntdll:NtSetInformationToken TokenIntegrityLevel stub!
+0068:fixme:ntdll:NtFilterToken flags 2 unsupported
+0068:fixme:ntdll:NtFilterToken support for restricting sids not yet implemented
+0068:fixme:ntdll:NtSetInformationToken TokenIntegrityLevel stub!
+0068:fixme:ntdll:NtSetInformationJobObject stub: 0x284 4 0x971ec58 4
+0068:fixme:ntdll:NtQueryInformationToken QueryInformationToken( ..., TokenAppContainerSid, ...) semi-stub
+003b:fixme:winsock:WS_setsockopt SO_SNDBUF ignoring request to disable send buffering
+003b:fixme:winsock:WS_setsockopt SO_SNDBUF ignoring request to disable send buffering
+003b:fixme:winsock:WS_setsockopt SO_SNDBUF ignoring request to disable send buffering
+003b:fixme:winsock:WS_setsockopt SO_SNDBUF ignoring request to disable send buffering
+007f:fixme:win:RegisterTouchWindow (0x300e2 00000003): stub
+007f:fixme:wgl:X11DRV_wglChoosePixelFormatARB unused pfAttribFList
+0081:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+0081:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+0081:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000019-0000-0000-c000-000000000046} (unknown)
+0081:fixme:shell:CustomDestinationList_BeginList 0x4a50b40 (0x730fa48 {92ca9dcd-5622-4bba-a805-5e9f541bd8c9} 0x730fa54): stub
+0041:fixme:xinput:XInputGetBatteryInformation (index 0, type 0, battery 0x631f6dc) Stub!
+003b:fixme:winsock:WS_setsockopt SO_SNDBUF ignoring request to disable send buffering
+0084:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+0084:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+0084:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000019-0000-0000-c000-000000000046} (unknown)
+0084:fixme:shell:CustomDestinationList_BeginList 0x4b6b798 (0xfc1fa48 {92ca9dcd-5622-4bba-a805-5e9f541bd8c9} 0xfc1fa54): stub
+003b:fixme:ntdll:NtLockFile I/O completion on lock not implemented yet
+002d:fixme:imm:ImmReleaseContext (0x100f6, 0x49a13d0): stub
+002d:fixme:dwmapi:DwmExtendFrameIntoClientArea (0x500e0, 0x33df54) stub
+002d:fixme:dwmapi:DwmExtendFrameIntoClientArea (0x400ea, 0x33daac) stub
+0068:fixme:ntdll:NtQueryInformationToken QueryInformationToken( ..., TokenSessionId, ...) semi-stub
+0068:fixme:ntdll:NtFilterToken flags 2 unsupported
+0068:fixme:ntdll:NtFilterToken support for restricting sids not yet implemented
+0068:fixme:advapi:SetEntriesInAclW unhandled access mode 4
+0068:fixme:ntdll:NtSetInformationToken TokenIntegrityLevel stub!
+0068:fixme:ntdll:NtFilterToken flags 2 unsupported
+0068:fixme:ntdll:NtFilterToken support for restricting sids not yet implemented
+0068:fixme:advapi:SetEntriesInAclW unhandled access mode 4
+0068:fixme:ntdll:NtSetInformationToken TokenIntegrityLevel stub!
+0068:fixme:ntdll:NtSetInformationJobObject stub: 0x28c 4 0x971ec58 4
+0068:fixme:ntdll:NtQueryInformationToken QueryInformationToken( ..., TokenAppContainerSid, ...) semi-stub
+002d:fixme:win:RegisterDeviceNotificationA (hwnd=0x400ea, filter=0x33dc94,flags=0x00000004) returns a fake device notification handle!
+002d:err:ole:CoGetClassObject class {294935ce-f637-4e7c-a41b-ab255460b862} not registered
+002d:err:ole:CoGetClassObject class {294935ce-f637-4e7c-a41b-ab255460b862} not registered
+002d:err:ole:create_server class {294935ce-f637-4e7c-a41b-ab255460b862} not registered
+002d:fixme:ole:CoGetClassObject CLSCTX_REMOTE_SERVER not supported
+002d:err:ole:CoGetClassObject no class object {294935ce-f637-4e7c-a41b-ab255460b862} could be created for context 0x17
+002d:fixme:dwmapi:DwmExtendFrameIntoClientArea (0x30126, 0x33e168) stub
+0087:fixme:hnetcfg:fw_apps_get__NewEnum 0x74b1de8, 0x1069f980
+0087:fixme:hnetcfg:fw_app_put_ProcessImageFileName 0x74a1f30, L"C:\\Program Files (x86)\\Steam\\Steam.exe"
+0087:fixme:mpr:WNetGetUniversalNameW (L"C:\\Program Files (x86)\\Steam\\Steam.exe", 0x00000001, (nil), 0x1069f954): stub
+0087:fixme:hnetcfg:fw_app_put_Name 0x74a1f30, L"Steam"
+0087:fixme:hnetcfg:fw_app_put_Enabled 0x74a1f30, -1
+0087:fixme:hnetcfg:fw_apps_Add 0x74a1d60, 0x74a1f30
+0087:fixme:hnetcfg:netfw_rules_get__NewEnum 0x74a1d40, 0x1069f97c
+0087:fixme:hnetcfg:fw_apps_get__NewEnum 0x74a1d40, 0x1069f980
+0087:fixme:hnetcfg:fw_app_put_ProcessImageFileName 0x749d668, L"C:\\Program Files (x86)\\Steam\\bin\\cef\\cef.win7x64\\steamwebhelper.exe"
+0087:fixme:mpr:WNetGetUniversalNameW (L"C:\\Program Files (x86)\\Steam\\bin\\cef\\cef.win7x64\\steamwebhelper.exe", 0x00000001, (nil), 0x1069f954): stub
+0087:fixme:hnetcfg:fw_app_put_Name 0x749d668, L"Steam Web Helper"
+0087:fixme:hnetcfg:fw_app_put_Enabled 0x749d668, -1
+0087:fixme:hnetcfg:fw_apps_Add 0x749d628, 0x749d668
+0087:fixme:hnetcfg:netfw_rules_get__NewEnum 0x74a1d60, 0x1069f97c
+0089:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+0089:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+0089:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000019-0000-0000-c000-000000000046} (unknown)
+0089:fixme:shell:CustomDestinationList_BeginList 0x1b0b98 (0x108bfa48 {92ca9dcd-5622-4bba-a805-5e9f541bd8c9} 0x108bfa54): stub
+003b:fixme:winsock:WS_setsockopt SO_SNDBUF ignoring request to disable send buffering
+003b:fixme:winsock:WS_setsockopt SO_SNDBUF ignoring request to disable send buffering
+0033:fixme:dwmapi:DwmIsCompositionEnabled 0x23d46c
+0033:fixme:win:RegisterTouchWindow (0x200f6 00000002): stub
+008a:fixme:wtsapi:WTSRegisterSessionNotification Stub 0x100ee 0x00000000
+0033:fixme:win:RegisterTouchWindow (0x10156 00000002): stub
+002d:fixme:dwmapi:DwmExtendFrameIntoClientArea (0x300f8, 0x33dee8) stub
+002d:fixme:dwmapi:DwmExtendFrameIntoClientArea (0x10162, 0x33dda8) stub
+0068:fixme:ntdll:NtQueryInformationToken QueryInformationToken( ..., TokenSessionId, ...) semi-stub
+0068:fixme:ntdll:NtFilterToken flags 2 unsupported
+0068:fixme:ntdll:NtFilterToken support for restricting sids not yet implemented
+0068:fixme:advapi:SetEntriesInAclW unhandled access mode 4
+0068:fixme:ntdll:NtSetInformationToken TokenIntegrityLevel stub!
+0068:fixme:ntdll:NtFilterToken flags 2 unsupported
+0068:fixme:ntdll:NtFilterToken support for restricting sids not yet implemented
+0068:fixme:advapi:SetEntriesInAclW unhandled access mode 4
+0068:fixme:ntdll:NtSetInformationToken TokenIntegrityLevel stub!
+0068:fixme:ntdll:NtSetInformationJobObject stub: 0x2e4 4 0x971ec58 4
+0068:fixme:ntdll:NtQueryInformationToken QueryInformationToken( ..., TokenAppContainerSid, ...) semi-stub
+008f:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+008f:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+008f:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000019-0000-0000-c000-000000000046} (unknown)
+008f:fixme:shell:CustomDestinationList_BeginList 0x7688828 (0x10adfa48 {92ca9dcd-5622-4bba-a805-5e9f541bd8c9} 0x10adfa54): stub
+0068:fixme:ntdll:NtQueryInformationToken QueryInformationToken( ..., TokenSessionId, ...) semi-stub
+0068:fixme:ntdll:NtFilterToken flags 2 unsupported
+0068:fixme:ntdll:NtFilterToken support for restricting sids not yet implemented
+0068:fixme:advapi:SetEntriesInAclW unhandled access mode 4
+0068:fixme:ntdll:NtSetInformationToken TokenIntegrityLevel stub!
+0068:fixme:ntdll:NtFilterToken flags 2 unsupported
+0068:fixme:ntdll:NtFilterToken support for restricting sids not yet implemented
+0068:fixme:advapi:SetEntriesInAclW unhandled access mode 4
+0068:fixme:ntdll:NtSetInformationToken TokenIntegrityLevel stub!
+0068:fixme:ntdll:NtSetInformationJobObject stub: 0x2dc 4 0x971ec58 4
+0068:fixme:ntdll:NtQueryInformationToken QueryInformationToken( ..., TokenAppContainerSid, ...) semi-stub
+0098:fixme:ver:GetCurrentPackageId (0x23fd30 (nil)): stub
+0096:fixme:heap:RtlSetHeapInformation 0x3d0000 0 0x23e730 4 stub
+0096:fixme:ntdll:EtwEventRegister ({5eec90ab-c022-44b2-a5dd-fd716a222a15}, 0x2911a4, 0x38f0b0, 0x38f0d0) stub.
+0096:fixme:ntdll:EtwEventSetInformation (deadbeef, 2, 0x387a1a, 43) stub
+0096:fixme:ntdll:EtwEventRegister ({47a9201e-73b0-42ce-9821-7e134361bc6f}, 0x5ab460, 0x665380, 0x665378) stub.
+0096:fixme:ntdll:EtwEventRegister ({58a9201e-73b0-42ce-9821-7e134361bc70}, 0x5ab460, 0x6653b8, 0x6653b0) stub.
+0096:fixme:ntdll:EtwEventRegister ({3fa9201e-73b0-43fe-9821-7e145359bc6f}, 0x5ab460, 0x665348, 0x665340) stub.
+0096:fixme:ntdll:EtwEventRegister ({1432afee-73b0-42ce-9821-7e134361b433}, 0x5ab460, 0x6653f0, 0x6653e8) stub.
+0096:fixme:ntdll:EtwEventRegister ({4372afee-73b0-42ce-9821-7e134361b519}, 0x5ab460, 0x665428, 0x665420) stub.
+0096:fixme:imm:ImmGetOpenStatus (0x51080): semi-stub
+009a:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+009a:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+009a:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000019-0000-0000-c000-000000000046} (unknown)
+009a:fixme:shell:CustomDestinationList_BeginList 0x74b57d0 (0x1095fa48 {92ca9dcd-5622-4bba-a805-5e9f541bd8c9} 0x1095fa54): stub
+009c:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+009c:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+009c:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000019-0000-0000-c000-000000000046} (unknown)
+009c:fixme:shell:CustomDestinationList_BeginList 0x7665c18 (0x10b7fa48 {92ca9dcd-5622-4bba-a805-5e9f541bd8c9} 0x10b7fa54): stub
+003b:fixme:winsock:WS_setsockopt SO_SNDBUF ignoring request to disable send buffering
+0096:fixme:ntdll:EtwEventRegister ({47a9201e-73b0-42ce-9821-7e134361bc6f}, 0x13f006d00, 0x13f057518, 0x13f057510) stub.
+0096:fixme:ntdll:EtwEventRegister ({58a9201e-73b0-42ce-9821-7e134361bc70}, 0x13f006d00, 0x13f057550, 0x13f057548) stub.
+0096:fixme:ntdll:EtwEventRegister ({3fa9201e-73b0-43fe-9821-7e145359bc6f}, 0x13f006d00, 0x13f0574e0, 0x13f0574d8) stub.
+0096:fixme:ntdll:EtwEventRegister ({1432afee-73b0-42ce-9821-7e134361b433}, 0x13f006d00, 0x13f057588, 0x13f057580) stub.
+0096:fixme:ntdll:EtwEventRegister ({4372afee-73b0-42ce-9821-7e134361b519}, 0x13f006d00, 0x13f0575c0, 0x13f0575b8) stub.
+009f:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+009f:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+009f:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000019-0000-0000-c000-000000000046} (unknown)
+009f:fixme:shell:CustomDestinationList_BeginList 0x7689270 (0x1109fa48 {92ca9dcd-5622-4bba-a805-5e9f541bd8c9} 0x1109fa54): stub
+00a1:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+00a1:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+00a1:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000019-0000-0000-c000-000000000046} (unknown)
+00a1:fixme:shell:CustomDestinationList_BeginList 0x47b7628 (0x10a7fa48 {92ca9dcd-5622-4bba-a805-5e9f541bd8c9} 0x10a7fa54): stub
+003b:fixme:winsock:WS_setsockopt SO_SNDBUF ignoring request to disable send buffering
+003b:fixme:winsock:WS_setsockopt SO_SNDBUF ignoring request to disable send buffering
+00a3:fixme:heap:RtlSetHeapInformation 0x10000 0 0x4c2fdc8 4 stub
+00aa:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+00aa:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+00aa:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000019-0000-0000-c000-000000000046} (unknown)
+00aa:fixme:shell:CustomDestinationList_BeginList 0x76847e8 (0x112bfa48 {92ca9dcd-5622-4bba-a805-5e9f541bd8c9} 0x112bfa54): stub
+00a3:fixme:ver:GetCurrentPackageId (0x4c1f7c0 (nil)): stub
+00b0:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+00b0:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+00b0:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000019-0000-0000-c000-000000000046} (unknown)
+00b0:fixme:shell:CustomDestinationList_BeginList 0x74afd98 (0x111afa48 {92ca9dcd-5622-4bba-a805-5e9f541bd8c9} 0x111afa54): stub
+0060:fixme:file:ReplaceFileW Ignoring flags 2
+00a3:fixme:d3d9:D3DPERF_SetOptions (0x1) : stub
+00a3:fixme:dxgi:DXGID3D10CreateDevice Ignoring flags 0x80.
+00a3:fixme:dxgi:DXGID3D10CreateDevice Ignoring flags 0x80.
+00a3:fixme:d3d11:d3d11_device_CheckFeatureSupport Returning fake Options support data.
+00a3:fixme:d3d11:d3d11_device_CheckFeatureSupport Returning fake threading support data.
+00a3:fixme:nvapi:unimplemented_stub function 0x6ff81213 is unimplemented!
+00a3:fixme:nvapi:unimplemented_stub function 0xdcb616c3 is unimplemented!
+00a3:fixme:nvapi:unimplemented_stub function 0x7f9b368 is unimplemented!
+00a3:fixme:nvapi:unimplemented_stub function 0x1be0b8e5 is unimplemented!
+00a3:fixme:setupapi:SetupDiGetDevicePropertyW 0x9560110, 0x4c1cd60, 0x141e3a150, 0x4c1ceb0, 0x4c1ceb8, 4, 0x4c1cea0, 0x00000000 stub
+00a3:fixme:dxgi:wined3d_bind_flags_from_dxgi_usage Unhandled DXGI usage 0x40.
+00a3:fixme:d3d:swapchain_init The application requested more than one back buffer, this is not properly supported.
+Please configure the application to use double buffering (1 back buffer) if possible.
+00a3:fixme:dxgi:dxgi_factory_MakeWindowAssociation iface 0x61054a0, window 0x10192, flags 0 stub!
+00a3:fixme:dxgi:dxgi_output_GetDisplayModeList iface 0x63de0c0, format DXGI_FORMAT_R8G8B8A8_UNORM_SRGB, flags 0, mode_count 0x9ece908, desc (nil) partial stub!
+00a3:fixme:dxgi:dxgi_output_GetDisplayModeList iface 0x63de0c0, format DXGI_FORMAT_R8G8B8A8_UNORM_SRGB, flags 0, mode_count 0x9ece908, desc 0x63de110 partial stub!
+00a3:fixme:d3d:wined3d_device_update_sub_resource Ignoring flags 0x2.
+00a3:fixme:d3d:wined3d_device_update_sub_resource Ignoring flags 0x2.
+00a3:fixme:d3d:wined3d_device_update_sub_resource Ignoring flags 0x2.
+00a3:fixme:nvapi:unimplemented_stub function 0xdc6dc8d3 is unimplemented!
+00a3:fixme:dxgi:dxgi_output_GetDisplayModeList iface 0x63de100, format DXGI_FORMAT_R8G8B8A8_UNORM_SRGB, flags 0, mode_count 0x9ece908, desc (nil) partial stub!
+00a3:fixme:dxgi:dxgi_output_GetDisplayModeList iface 0x63de100, format DXGI_FORMAT_R8G8B8A8_UNORM_SRGB, flags 0, mode_count 0x9ece908, desc 0xa815570 partial stub!
+00a3:fixme:dxgi:d3d11_swapchain_ResizeBuffers Ignoring flags 0x2.
+wine: Unhandled exception 0x80000003 in thread a3 at address 0x14040c05e (thread 00a3), starting debugger...
+00b4:fixme:ntdll:EtwEventRegister ({47a9201e-73b0-42ce-9821-7e134361bc6f}, 0x18008b460, 0x180145380, 0x180145378) stub.
+00b4:fixme:ntdll:EtwEventRegister ({58a9201e-73b0-42ce-9821-7e134361bc70}, 0x18008b460, 0x1801453b8, 0x1801453b0) stub.
+00b4:fixme:ntdll:EtwEventRegister ({3fa9201e-73b0-43fe-9821-7e145359bc6f}, 0x18008b460, 0x180145348, 0x180145340) stub.
+00b4:fixme:ntdll:EtwEventRegister ({1432afee-73b0-42ce-9821-7e134361b433}, 0x18008b460, 0x1801453f0, 0x1801453e8) stub.
+00b4:fixme:ntdll:EtwEventRegister ({4372afee-73b0-42ce-9821-7e134361b519}, 0x18008b460, 0x180145428, 0x180145420) stub.
+00b4:fixme:imm:ImmGetOpenStatus (0x19660): semi-stub
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:elf_search_auxv can't find symbol in module
+00b4:fixme:dbghelp:interpret_function_table_entry PUSH_MACHFRAME 6
+00b4:fixme:dbghelp:interpret_function_table_entry PUSH_MACHFRAME 6
+00b4:fixme:imm:ImmReleaseContext ((nil), (nil)): stub
+00b4:fixme:ntdll:EtwEventUnregister (deadbeef) stub.
+00b4:fixme:ntdll:EtwEventUnregister (deadbeef) stub.
+00b4:fixme:ntdll:EtwEventUnregister (deadbeef) stub.
+00b4:fixme:ntdll:EtwEventUnregister (deadbeef) stub.
+00b4:fixme:ntdll:EtwEventUnregister (deadbeef) stub.
+00bb:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+00bb:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+00bb:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000019-0000-0000-c000-000000000046} (unknown)
+00bb:fixme:shell:CustomDestinationList_BeginList 0x7617f20 (0x112bfa48 {92ca9dcd-5622-4bba-a805-5e9f541bd8c9} 0x112bfa54): stub
+00bd:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+00bd:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000003-0000-0000-c000-000000000046} (unknown)
+00bd:fixme:shell:CustomDestinationList_QueryInterface not implemented for {00000019-0000-0000-c000-000000000046} (unknown)
+00bd:fixme:shell:CustomDestinationList_BeginList 0x7684710 (0x111afa48 {92ca9dcd-5622-4bba-a805-5e9f541bd8c9} 0x111afa54): stub
