@@ -55,3 +55,9 @@ Replaced them with gentoo's libs from <br />
 `/usr/lib64/libfontconfig.so.1`<br />
 
 Fixed.. https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/PATCHED_LUTRIS_DEBUG.log
+
+Encountered lutris bug where DXVK is not detected which results in black-screen (suspect that launch to blackscreen means no DXVK detected), tried to reinstall the game, but lutris installer is stuck in loop.
+
+Noticed that Dishnored 2 is installed in linuxsteam, Dishonored 2 on Steam play is able to launch dishonored 2.
+
+Conclusion: I'm convinced that lutris pulled linuxsteam instead of winesteam which made it look like it's able to run dishonored 2.
