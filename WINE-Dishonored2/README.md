@@ -1,5 +1,5 @@
 # Dishonored 2 debug
-Wine bug: https://bugs.winehq.org/show_bug.cgi?id=46307#add_comment
+Wine bug: https://bugs.winehq.org/show_bug.cgi?id=46307
 
 Installed `xact` + `d3dx9` via winetricks for 64-bit prefix
 
