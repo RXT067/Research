@@ -65,3 +65,8 @@ I had to reinstall Dishonored 2 it seems that lutris corrupted it. (abnormal gli
 Reinstalled dishonored 2 game opens, runs on 50FPS, There is significant delay from controller input that is not present in native linux games (e.i: rocket league) + Game freezes if player enters new area.
 
 Conclusion: I'm convinced that lutris pulled linuxsteam instead of winesteam which made it look like it's able to run dishonored 2.
+
+### Steam Play
+Game is able to launch and runs on 50FPS with frezes every few seconds + freeze if player enters new area + there is significant delay from controller input.
+
+Proton log: https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/PROTON_LOG.log
