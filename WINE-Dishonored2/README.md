@@ -70,3 +70,5 @@ Conclusion: I'm convinced that lutris pulled linuxsteam instead of winesteam whi
 Game is able to launch and runs on 50FPS with frezes every few seconds + freeze if player enters new area + there is significant delay from controller input.
 
 Proton log: https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/PROTON_LOG.log
+
+Video analysis: https://www.youtube.com/watch?v=1RVQOy38Nwo
