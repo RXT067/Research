@@ -22,6 +22,6 @@ WINEDEBUG='fixme-all,+dll' WINEARCH='win64' WINEPREFIX='/home/kreyren/.wine-64' 
 There seems to be a splash screen video at the beggining of the game. Suspect missing codec/player
 
 - There is `$GAMEDIR/base/video` full of `file.bk2` 
-- `bk2` seems to be `Bink Video format` 
+- `bk2` seems to be `Bink Video format`  (https://en.wikipedia.org/wiki/Bink_Video)
 - found `binkw32` in `winetricks` 
    - Unable to install `binkw32` in 64-bit wineprefix
