@@ -26,4 +26,4 @@ There seems to be a splash screen video at the beggining of the game. Suspect mi
 - found `binkw32` in `winetricks` 
    - Unable to install `binkw32` in 64-bit wineprefix
 - Wine is unable to open `.bk2` (tested in explorer)
-[BK2_WINE](https://i.imgur.com/9lwZgiY.jpg)
+![BK2_WINE](https://i.imgur.com/9lwZgiY.jpg)
