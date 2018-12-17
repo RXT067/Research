@@ -11,6 +11,7 @@ Suspect problem with libraries since game is able to launch on lutris. On Lutris
 
 Noticed:
 ![ERROR](https://i.imgur.com/Wkv2dK5.jpg "ERROR")
+- Can't click on anything, resizing using meta+mouse2 on i3
 
 Using to debug:
 
