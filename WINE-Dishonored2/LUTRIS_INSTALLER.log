@@ -1,0 +1,15 @@
+------------------------------------------------------
+You are using a 64-bit WINEPREFIX. Note that many verbs only install 32-bit versions of packages. If you encounter problems, please retest in a clean 32-bit WINEPREFIX before reporting a bug.
+------------------------------------------------------
+Using winetricks 20171018-next - sha256sum: e586dbf0ebdd7969b558e1e03372bfd7e735a98a33e95bdad32d831e6b2cc2db with wine-4.0-rc2 (Staging) and WINEARCH=win64
+------------------------------------------------------
+Github down? version '' doesn't appear to be a valid version
+------------------------------------------------------
+------------------------------------------------------
+You are running winetricks-20171018-next, latest upstream is winetricks-!
+------------------------------------------------------
+------------------------------------------------------
+You should update using your distribution's package manager, --self-update, or manually.
+------------------------------------------------------
+Executing w_do_call xact
+xact already installed, skipping
