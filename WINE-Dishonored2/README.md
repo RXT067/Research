@@ -44,3 +44,13 @@ Installed lutris with lutris's winesteam and installed dihhonored 2 https://gith
 
 This is a known issues with fontconfig libraries that lutris uses in it's runtime.. Like to point out that i've reported this issue and the only response i've got it "This is Gentoo issue.." https://github.com/lutris/lutris/issues/1167
 
+Fixing Lutris's butterflies.. 
+Located broken libs in:
+`/home/kreyren/.local/share/lutris/runtime/lib32/libfontconfig.so.1`
+`/home/kreyren/.local/share/lutris/runtime/lib64/libfontconfig.so.1`
+Replaced them with gentoo's libs from 
+`/usr/lib32/libfontconfig.so.1`
+`/usr/lib64/libfontconfig.so.1`
+
+
+
