@@ -60,4 +60,8 @@ Encountered lutris bug where DXVK is not detected which results in black-screen 
 
 Noticed that Dishnored 2 is installed in linuxsteam, Dishonored 2 on Steam play is able to launch dishonored 2.
 
+I had to reinstall Dishonored 2 it seems that lutris corrupted it. (abnormal glitches, freezes)
+
+Reinstalled dishonored 2 game opens, runs on 50FPS, There is significant delay from controller input that is not present in native linux games (e.i: rocket league) + Game freezes if player enters new area.
+
 Conclusion: I'm convinced that lutris pulled linuxsteam instead of winesteam which made it look like it's able to run dishonored 2.
