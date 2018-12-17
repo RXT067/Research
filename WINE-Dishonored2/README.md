@@ -17,7 +17,11 @@ WINEDEBUG='fixme-all,+dll' WINEARCH='win64' WINEPREFIX='/home/kreyren/.wine-64' 
 ```
 
 ### Missing libraries?
-Suspect problem with libraries since game is able to launch on lutris. On Lutris game has performance issues.
+Suspect problem with libraries since game is able to launch on lutris. On Lutris game has performance issues (freezes everytime it player reach area that wasn't explored before + microfreezes every few seconds + Controller input has long delay).
+
+Lutris Installer: https://lutris.net/games/install/6425/view
+
+Lutris uses "Lutris runtime" which is folder full of libraries that are provided with the installer if configured.
 
 ### Missing codec/player?
 There seems to be a splash screen video at the beggining of the game. Suspect missing codec/player
