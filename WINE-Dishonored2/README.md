@@ -15,7 +15,7 @@ WINEDEBUG='fixme-all,+dll' WINEARCH='win64' WINEPREFIX='/home/kreyren/.wine-64' 
 
 ## WINE
 
-### Missing libraries?
+### SOLVED(?): Missing libraries?
 
 Noticed:
 ![ERROR](https://i.imgur.com/Wkv2dK5.jpg "ERROR")
@@ -29,7 +29,7 @@ Lutris uses "Lutris runtime" which is folder full of libraries that are provided
 
 SOLVED: Trying to greb loaded libs on lutris = was useless.
 
-### Missing codec/player?
+### SOLVED(?): Missing codec/player?
 There seems to be a splash screen video at the beggining of the game. Suspect missing codec/player
 
 - There is `$GAMEDIR/base/video` full of `file.bk2` 
