@@ -110,9 +110,13 @@ https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/logblock-freeze.
 - It's not trying to load those, it's just WARNs from NtQueryAttributesFile, UNCONFIRMED
 - Those libraries are required and they might cause an instability, UNCONFIRMED.
    - I'm using gentoo the likelyhood of missing a libs/deps is high since gentoo came with bare minimum by default. Which libraries are required? Do i just download them from some site that hosts .dll and place them in required folders?
+
 - strace for wine was suggested,
 - Trying: `strace -o dishonored_trace.log -f -s 10000000 WINEARCH='win64' WINEPREFIX='/home/kreyren/.wine-64' wine /home/kreyren/.wine-64/drive_c/Program\ Files\ \(x86\)/Steam/steamapps/common/Dishonored2/Dishonored2.exe`
-   - `wine start /unix '/home/kreyren/.wine-64/drive_c/Program Files (x86)/Steam/steamapps/common/Dishonored2/Dishonored2.exe`  was suggested, Source https://wiki.winehq.org/Start, Source  https://wiki.winehq.org/Wine_User%27s_Guide  - Section 3
+   - `wine start /unix '/home/kreyren/.wine-64/drive_c/Program Files (x86)/Steam/steamapps/common/Dishonored2/Dishonored2.exe`  was suggested, Source https://wiki.winehq.org/Start, 
+      - Source  https://wiki.winehq.org/Wine_User%27s_Guide  - Section 3
+         - Related 3.1.1.1 Using wine start
+         - `If you prefer to use a Unix style pathname, use the /unix option to start, e.g.: wine start /unix "$HOME/installers/TronSetup.exe"` was noted, but is it really important for using `wine`? Seems to be relevant for CDs. (?)
 
 ## Lutris
 Installed lutris with lutris's winesteam and installed dihhonored 2 https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/Lutris_debug.log
