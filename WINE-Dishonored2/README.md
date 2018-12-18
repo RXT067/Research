@@ -101,6 +101,10 @@ using `+relay` instead of `+all` was suggested.
 
 Running game with `WINEDEBUG="-all"` had no offect on the issue.
 
+Grabbed this log-block:
+https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/logblock-freeze.log
+- Waited for terminal output to stop generating output, reproduced the issue, killed wine.
+
 
 ## Lutris
 Installed lutris with lutris's winesteam and installed dihhonored 2 https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/Lutris_debug.log
