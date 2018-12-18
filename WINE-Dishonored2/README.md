@@ -45,7 +45,7 @@ SOLVED: Was told that it's waste of time from wine developer.
 
 NEW RESULT: Reinstalled DXVK = Game crashes on startup.
 
-#### FIXED: CreateDCW no driver foun
+#### FIXED: CreateDCW no driver found
 ```
 WINEDEBUG='fixme-all,+dll' WINEARCH='win64' WINEPREFIX='/home/kreyren/.wine-64' wine /home/kreyren/.wine-64/drive_c/Program\ Files\ \(x86\)/Steam/steamapps/common/Dishonored2/Dishonored2.exe 
 
