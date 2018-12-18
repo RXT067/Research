@@ -66,6 +66,21 @@ X Error of failed request:  BadWindow (invalid Window parameter)
 ^C
 ```
 
+Related: https://comp.emulators.ms-windows.wine.narkive.com/DXFpe3mV/err-dc-createdcw-no-driver-found-for-l-wineps
+*suspect you have no access to the Wine PS driver.* 
+- What is `Wine PS Driver`? 
+   - From context it seems to be `Wine prinding Driver(?)`.
+- I'm not using printer - Irelevant?
+
+Related: http://wine.1045685.n8.nabble.com/Bug-42907-New-Wine-crashes-when-loading-The-Specialists-mod-for-Half-Life-td5925388.html
+
+Related: http://wine.1045685.n8.nabble.com/Bug-15392-New-err-dc-CreateDCW-no-driver-found-for-L-quot-DIRDIB-quot-with-Secret-of-the-Loxor-game-td1623006.html
+
+Related: https://bugs.winehq.org/show_bug.cgi?id=19508
+- It was fixed in wine-2.22 ?
+
+
+
 
 ## Lutris
 Installed lutris with lutris's winesteam and installed dihhonored 2 https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/Lutris_debug.log
