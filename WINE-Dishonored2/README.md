@@ -1,17 +1,11 @@
 # Dishonored 2 debug
 Wine bug: https://bugs.winehq.org/show_bug.cgi?id=46307
 
-Installed `xact` + `d3dx9` via winetricks for 64-bit prefix
+**System-info:** https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/wine-report
 
-Starts in blackscreen and becames unresponsive.
+**Deps:** Installed `xact` + `d3dx9` + `corefonts` via winetricks for 64-bit prefix.
 
-Tried to add `corefonts` = same issue
-
-NEW RESULT: Reinstalled DXVK = Game crashes on startup.
-
-Noticed:
-![ERROR](https://i.imgur.com/Wkv2dK5.jpg "ERROR")
-- Can't click on anything, resizing using meta+mouse2 on i3
+**STATUS:** Has performance issues - Silver(?)
 
 Using to debug:
 
@@ -22,13 +16,18 @@ WINEDEBUG='fixme-all,+dll' WINEARCH='win64' WINEPREFIX='/home/kreyren/.wine-64' 
 ## WINE
 
 ### Missing libraries?
+
+Noticed:
+![ERROR](https://i.imgur.com/Wkv2dK5.jpg "ERROR")
+- Can't click on anything, resizing using meta+mouse2 on i3
+
 Suspect problem with libraries since game is able to launch on lutris. On Lutris game has performance issues (freezes everytime it player reach area that wasn't explored before + microfreezes every few seconds + Controller input has long delay).
 
 Lutris Installer: https://lutris.net/games/install/6425/view
 
 Lutris uses "Lutris runtime" which is folder full of libraries that are provided with the installer if configured.
 
-Trying to greb loaded libs on lutris.
+SOLVED: Trying to greb loaded libs on lutris = was useless.
 
 ### Missing codec/player?
 There seems to be a splash screen video at the beggining of the game. Suspect missing codec/player
@@ -40,10 +39,13 @@ There seems to be a splash screen video at the beggining of the game. Suspect mi
 - Wine is unable to open `.bk2` (tested in explorer)
 ![BK2_WINE](https://i.imgur.com/9lwZgiY.jpg)
 
-Was told that it's waste of time from wine developer.
+SOLVED: Was told that it's waste of time from wine developer.
 
 ### Driver issue?
 
+NEW RESULT: Reinstalled DXVK = Game crashes on startup.
+
+#### FIXED: CreateDCW no driver foun
 ```
 WINEDEBUG='fixme-all,+dll' WINEARCH='win64' WINEPREFIX='/home/kreyren/.wine-64' wine /home/kreyren/.wine-64/drive_c/Program\ Files\ \(x86\)/Steam/steamapps/common/Dishonored2/Dishonored2.exe 
 
@@ -66,6 +68,9 @@ X Error of failed request:  BadWindow (invalid Window parameter)
 ^C
 ```
 
+**FIXED:** Updatating wine on `wine-4.0-rc2-22-g5a8e430b96 (Staging)` Fixed issue above.
+
+
 Related: https://comp.emulators.ms-windows.wine.narkive.com/DXFpe3mV/err-dc-createdcw-no-driver-found-for-l-wineps
 *suspect you have no access to the Wine PS driver.* 
 - What is `Wine PS Driver`? 
@@ -80,6 +85,7 @@ Related: https://bugs.winehq.org/show_bug.cgi?id=19508
 - It was fixed in wine-2.22 ?
    - Trying to confirm old fixed(?) bug https://bugs.winehq.org/show_bug.cgi?id=19508#c24
    - Re-emerging crazy wine in case upstream made merge request (2018-12-18 02:30:21 +- 8 min)
+
 
 
 
