@@ -91,7 +91,7 @@ Related: https://bugs.winehq.org/show_bug.cgi?id=19508
 
 Using:
 ```
-WINEDEBUG='+all,+timestamps' WINEARCH='win64' WINEPREFIX='/home/kreyren/.wine-64' wine /home/kreyren/.wine-64/drive_c/Program\ Files\ \(x86\)/Steam/steamapps/common/Dishonored2/Dishonored2.exe 2>&1 Dishonored_log.txt
+WINEDEBUG='+all,+timestamps' WINEARCH='win64' WINEPREFIX='/home/kreyren/.wine-64' wine /home/kreyren/.wine-64/drive_c/Program\ Files\ \(x86\)/Steam/steamapps/common/Dishonored2/Dishonored2.exe &> dishonored.txt
 
 ```
 
