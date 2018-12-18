@@ -87,7 +87,13 @@ Related: https://bugs.winehq.org/show_bug.cgi?id=19508
    - Re-emerging crazy wine in case upstream made merge request (2018-12-18 02:30:21 +- 8 min)
 
 
+#### Performance issues
 
+Using:
+```
+WINEDEBUG='+all,+timestamps' WINEARCH='win64' WINEPREFIX='/home/kreyren/.wine-64' wine /home/kreyren/.wine-64/drive_c/Program\ Files\ \(x86\)/Steam/steamapps/common/Dishonored2/Dishonored2.exe 2>&1 Dishonored_log.txt
+
+```
 
 
 ## Lutris
