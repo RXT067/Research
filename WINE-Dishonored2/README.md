@@ -95,6 +95,10 @@ WINEDEBUG='+all,+timestamps' WINEARCH='win64' WINEPREFIX='/home/kreyren/.wine-64
 
 ```
 
+http://www.sysprof.com/ was suggested.
+
+using `+relay` instead of `+all` was suggested.
+
 
 ## Lutris
 Installed lutris with lutris's winesteam and installed dihhonored 2 https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/Lutris_debug.log
