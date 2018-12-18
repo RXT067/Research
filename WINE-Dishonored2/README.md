@@ -5,7 +5,7 @@ Wine bug: https://bugs.winehq.org/show_bug.cgi?id=46307
 
 **Deps:** Installed `xact` + `d3dx9` + `corefonts` via winetricks for 64-bit prefix.
 
-**STATUS:** Has performance issues - Silver(?)
+**STATUS:** Has performance issues = Silver(?)
 
 Using to debug:
 
