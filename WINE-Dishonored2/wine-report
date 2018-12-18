@@ -1,10 +1,10 @@
 # wine-report
-DATE: 17.12.18-02:24:25
+DATE: 18.12.18-04:18:00
 Linux localhost 4.18.18-gentoo-r1 #15 SMP Sat Dec 15 22:29:33 -00 2018 x86_64 Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz GenuineIntel GNU/Linux
 
 	WINE VERSION:
 	
-wine-4.0-rc2 (Staging)
+wine-4.0-rc2-22-g5a8e430b96 (Staging)
 
 	INSTALLED LIBRARIES:
 	
@@ -2309,7 +2309,7 @@ dev-cpp/gtkmm-3.24.0
 dev-cpp/pangomm-2.40.1
 dev-db/lmdb-0.9.22
 dev-db/sqlite-3.25.3
-dev-lang/go-1.11.2
+dev-lang/go-1.11.4
 dev-lang/lua-5.1.5-r4
 dev-lang/luajit-2.0.5-r1
 dev-lang/mujs-1.0.5
@@ -2339,7 +2339,7 @@ dev-libs/ell-0.15
 dev-libs/expat-2.2.6
 dev-libs/fribidi-1.0.5
 dev-libs/geoip-1.6.12
-dev-libs/glib-2.56.2
+dev-libs/glib-2.58.1
 dev-libs/gmp-6.1.2-r1
 dev-libs/gobject-introspection-1.56.1
 dev-libs/gobject-introspection-common-1.56.1
@@ -2383,7 +2383,7 @@ dev-libs/libtasn1-4.13
 dev-libs/libunistring-0.9.10
 dev-libs/libusb-1.0.22
 dev-libs/libusb-compat-0.1.5-r3
-dev-libs/libuv-1.24.0
+dev-libs/libuv-1.24.1
 dev-libs/libverto-0.3.0
 dev-libs/libxml2-2.9.8
 dev-libs/libxslt-1.1.32
@@ -2487,7 +2487,7 @@ dev-php/xdebug-handler-1.3.0
 dev-python/PySocks-1.6.8
 dev-python/asn1crypto-0.24.0
 dev-python/bz2file-0.98
-dev-python/certifi-2018.8.24
+dev-python/certifi-2018.11.29
 dev-python/cffi-1.11.5
 dev-python/chardet-3.0.4
 dev-python/cryptography-2.4.2
@@ -2495,7 +2495,7 @@ dev-python/dbus-python-1.2.8
 dev-python/enum34-1.1.6
 dev-python/extras-1.0.0
 dev-python/fixtures-3.0.0
-dev-python/idna-2.7
+dev-python/idna-2.8
 dev-python/ipaddress-1.0.22
 dev-python/linecache2-1.0.0
 dev-python/mako-1.0.7
@@ -2515,7 +2515,7 @@ dev-python/pyrsistent-0.14.4
 dev-python/python-evdev-1.1.2
 dev-python/pyxattr-0.6.1
 dev-python/pyyaml-3.13
-dev-python/requests-2.21.0
+dev-python/requests-2.21.0-r1
 dev-python/setuptools-40.6.3
 dev-python/six-1.12.0
 dev-python/ssl-fetch-0.4
@@ -2523,7 +2523,7 @@ dev-python/subunit-1.2.0-r1
 dev-python/testtools-2.3.0
 dev-python/traceback2-1.4.0
 dev-python/unittest2-1.1.0
-dev-python/urllib3-1.23
+dev-python/urllib3-1.24.1
 dev-python/wxpython-3.0.2.0
 dev-qt/linguist-tools-5.11.3
 dev-qt/qtchooser-0_p20170803
@@ -2562,8 +2562,8 @@ dev-util/cmocka-1.1.3
 dev-util/colm-0.13.0.5
 dev-util/cppunit-1.14.0
 dev-util/desktop-file-utils-0.23
-dev-util/gdbus-codegen-2.56.2-r1
-dev-util/glib-utils-2.56.2
+dev-util/gdbus-codegen-2.58.1-r1
+dev-util/glib-utils-2.58.1
 dev-util/glslang-7.10.2984
 dev-util/gn-0.1479
 dev-util/gperf-3.1
@@ -2584,7 +2584,7 @@ dev-util/spirv-tools-2018.5
 dev-util/strace-4.25
 dev-util/vulkan-headers-1.1.92.0
 dev-util/vulkan-tools-1.1.92.0
-dev-vcs/git-2.20.0
+dev-vcs/git-2.20.1
 games-util/antimicro-2.23
 games-util/joystick-1.6.0
 games-util/lutris-0.4.14
@@ -2787,7 +2787,7 @@ sys-devel/make-4.2.1-r4
 sys-devel/patch-2.7.6-r2
 sys-fs/btrfs-progs-4.19.1
 sys-fs/cryptsetup-2.0.6
-sys-fs/e2fsprogs-1.44.4
+sys-fs/e2fsprogs-1.44.5
 sys-fs/eudev-3.2.7-r1
 sys-fs/lvm2-2.02.183
 sys-fs/udev-init-scripts-32
@@ -2795,7 +2795,7 @@ sys-fs/udisks-2.8.1
 sys-fs/xfsprogs-4.19.0
 sys-kernel/-MERGING-gentoo-sources-4.14.83
 sys-kernel/gentoo-sources-4.18.18-r1
-sys-kernel/linux-firmware-20181026
+sys-kernel/linux-firmware-20181216
 sys-kernel/linux-headers-4.19
 sys-libs/binutils-libs-2.31.1-r2
 sys-libs/compiler-rt-7.0.0
@@ -2803,7 +2803,7 @@ sys-libs/compiler-rt-sanitizers-7.0.0
 sys-libs/cracklib-2.9.6-r1
 sys-libs/db-5.3.28-r3
 sys-libs/db-6.0.35-r1
-sys-libs/e2fsprogs-libs-1.44.4
+sys-libs/e2fsprogs-libs-1.44.5
 sys-libs/efivar-37
 sys-libs/gdbm-1.18.1
 sys-libs/glibc-2.28-r3
@@ -2821,7 +2821,7 @@ sys-libs/readline-7.0_p5
 sys-libs/talloc-2.1.14
 sys-libs/tdb-1.3.16
 sys-libs/tevent-0.9.37
-sys-libs/timezone-data-2018g
+sys-libs/timezone-data-2018g-r1
 sys-libs/zlib-1.2.11-r2
 sys-process/cronbase-0.3.7-r6
 sys-process/cronie-1.5.2
@@ -2934,9 +2934,6 @@ x11-base/xorg-drivers-1.20
 x11-base/xorg-proto-2018.4
 x11-base/xorg-server-1.20.3
 x11-drivers/xf86-input-evdev-2.10.6
-x11-drivers/xf86-input-keyboard-1.9.0
-x11-drivers/xf86-input-libinput-0.28.1
-x11-drivers/xf86-input-mouse-1.9.3
 x11-drivers/xf86-video-amdgpu-18.1.0
 x11-drivers/xf86-video-ati-18.1.0
 x11-libs/cairo-1.16.0-r2
@@ -7427,10 +7424,10 @@ CONFIG_GENTOO_LINUX_INIT_SCRIPT=y
 Portage 2.3.52 (python 3.6.6-final-0, default/linux/amd64/17.0/desktop, gcc-8.2.0, glibc-2.28-r3, 4.18.18-gentoo-r1 x86_64)
 =================================================================
 System uname: Linux-4.18.18-gentoo-r1-x86_64-Intel-R-_Core-TM-_i7-2600K_CPU_@_3.40GHz-with-gentoo-2.6
-KiB Mem:    16406332 total,   6956768 free
-KiB Swap:    4095996 total,   4092412 free
-Timestamp of repository gentoo: Sun, 16 Dec 2018 22:30:01 +0000
-Head commit of repository gentoo: 4b9aae843576cdacef53c9b95a634bc2eb52d783
+KiB Mem:    16406332 total,   2788140 free
+KiB Swap:    4095996 total,   4095996 free
+Timestamp of repository gentoo: Tue, 18 Dec 2018 03:00:01 +0000
+Head commit of repository gentoo: 30a4b1c7507d8a8ac4cdf740c17d4e10a51effa3
 sh bash 4.4_p23
 ld GNU ld (Gentoo 2.31.1 p4) 2.31.1
 app-shells/bash:          4.4_p23::gentoo
@@ -7457,10 +7454,10 @@ gentoo
     sync-type: rsync
     sync-uri: rsync://rsync.gentoo.org/gentoo-portage
     priority: -1000
-    sync-rsync-verify-jobs: 1
     sync-rsync-verify-max-age: 24
     sync-rsync-verify-metamanifest: yes
     sync-rsync-extra-opts: 
+    sync-rsync-verify-jobs: 1
 
 steam-overlay
     location: /var/lib/layman/steam-overlay
