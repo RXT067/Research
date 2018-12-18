@@ -19,6 +19,8 @@ Using to debug:
 WINEDEBUG='fixme-all,+dll' WINEARCH='win64' WINEPREFIX='/home/kreyren/.wine-64' wine /home/kreyren/.wine-64/drive_c/Program\ Files\ \(x86\)/Steam/steamapps/common/Dishonored2/Dishonored2.exe 
 ```
 
+## WINE
+
 ### Missing libraries?
 Suspect problem with libraries since game is able to launch on lutris. On Lutris game has performance issues (freezes everytime it player reach area that wasn't explored before + microfreezes every few seconds + Controller input has long delay).
 
@@ -40,8 +42,32 @@ There seems to be a splash screen video at the beggining of the game. Suspect mi
 
 Was told that it's waste of time from wine developer.
 
+### Driver issue?
 
-### Lutris
+```
+WINEDEBUG='fixme-all,+dll' WINEARCH='win64' WINEPREFIX='/home/kreyren/.wine-64' wine /home/kreyren/.wine-64/drive_c/Program\ Files\ \(x86\)/Steam/steamapps/common/Dishonored2/Dishonored2.exe 
+
+004b:err:dc:CreateDCW no driver found for L"\\\\.\\DISPLAY2\\Monitor0"
+002d:err:ole:CoGetClassObject class {294935ce-f637-4e7c-a41b-ab255460b862} not registered
+002d:err:ole:CoGetClassObject class {294935ce-f637-4e7c-a41b-ab255460b862} not registered
+002d:err:ole:create_server class {294935ce-f637-4e7c-a41b-ab255460b862} not registered
+002d:err:ole:CoGetClassObject no class object {294935ce-f637-4e7c-a41b-ab255460b862} could be created for context 0x17
+WARNING: radv is not a conformant vulkan implementation, testing use only.
+X Error of failed request:  BadWindow (invalid Window parameter)
+  Major opcode of failed request:  40 (X_TranslateCoords)
+  Resource id in failed request:  0x40004a
+  Serial number of failed request:  459
+  Current serial number in output stream:  459
+X Error of failed request:  BadWindow (invalid Window parameter)
+  Major opcode of failed request:  10 (X_UnmapWindow)
+  Resource id in failed request:  0x2a00001
+  Serial number of failed request:  182
+  Current serial number in output stream:  185
+^C
+```
+
+
+## Lutris
 Installed lutris with lutris's winesteam and installed dihhonored 2 https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/Lutris_debug.log
 
 This is a known issues with fontconfig libraries that lutris uses in it's runtime.. Like to point out that i've reported this issue and the only response i've got it "This is Gentoo issue.." https://github.com/lutris/lutris/issues/1167
@@ -66,7 +92,7 @@ Reinstalled dishonored 2 game opens, runs on 50FPS, There is significant delay f
 
 Conclusion: I'm convinced that lutris pulled linuxsteam instead of winesteam which made it look like it's able to run dishonored 2.
 
-### Steam Play
+## Steam Play
 Game is able to launch and runs on 50FPS with frezes every few seconds + freeze if player enters new area + there is significant delay from controller input.
 
 Proton log: https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/PROTON_LOG.log
