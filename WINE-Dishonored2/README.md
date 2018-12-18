@@ -79,7 +79,7 @@ Related: http://wine.1045685.n8.nabble.com/Bug-15392-New-err-dc-CreateDCW-no-dri
 Related: https://bugs.winehq.org/show_bug.cgi?id=19508
 - It was fixed in wine-2.22 ?
    - Trying to confirm old fixed(?) bug https://bugs.winehq.org/show_bug.cgi?id=19508#c24
-   - Re-emerging crazy wine in case upstream make a push.
+   - Re-emerging crazy wine in case upstream made merge request (2018-12-18 02:30:21 +- 8 min)
 
 
 
