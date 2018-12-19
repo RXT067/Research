@@ -30,7 +30,9 @@ Lutris Installer: https://lutris.net/games/install/6425/view
 
 Lutris uses "Lutris runtime" which is folder full of libraries that are provided with the installer if configured.
 
-SOLVED: Trying to greb loaded libs on lutris = was useless.
+Trying to greb loaded libs on lutris = was useless.
+
+Solved: Changed gentoo on multilib, wasn't related, eliminated variables.
 
 ### SOLVED(?): Missing codec/player?
 There seems to be a splash screen video at the beggining of the game. Suspect missing codec/player
