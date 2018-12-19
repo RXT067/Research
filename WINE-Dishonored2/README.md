@@ -128,8 +128,8 @@ https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/logblock-freeze.
          - Shader cache relevant? Source: https://www.phoronix.com/scan.php?page=news_item&px=DXVK-Shader-Cache-September
             - https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/IRC_WINE_SUGGESTIOn
             - https://github.com/doitsujin/dxvk/blob/master/README.md#state-cache
-            - Using `DXVK_STATE_CACHE='/tmp/dishonored' DXVK_HUD=devinfo,fps,frametimes,drawcalls,pipelines,memory,version' WINEPREFIX='/home/kreyren/.wine-64' wine start /unix '/home/kreyren/.wine-64/drive_c/Program Files (x86)/Steam/steamapps/common/Dishonored2/Dishonored2.exe
-`
+            - Using `DXVK_STATE_CACHE='/tmp/dishonored' DXVK_HUD='devinfo,fps,frametimes,drawcalls,pipelines,memory,version' WINEPREFIX='/home/kreyren/.wine-64' wine start /unix '/home/kreyren/.wine-64/drive_c/Program Files (x86)/Steam/steamapps/common/Dishonored2/Dishonored2.exe'`
+            - updated system on multilib, reinstalled wine prefixes + game and upgraded system's mesa, vulkan-loader on 9999 = results in graphical issues, suspect mesa/vulkan-loader issue. Problems with performance may be related to shaders.
 
 ## Lutris
 Installed lutris with lutris's winesteam and installed dihhonored 2 https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/Lutris_debug.log
