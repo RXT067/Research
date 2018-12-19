@@ -118,6 +118,7 @@ https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/logblock-freeze.
          - Related 3.1.1.1 Using wine start
          - `If you prefer to use a Unix style pathname, use the /unix option to start, e.g.: wine start /unix "$HOME/installers/TronSetup.exe"` was noted, but is it really important for using `wine`? Seems to be relevant for CDs. (?)
       - Command above is creating new prefix in .wine, using WINEPREFIX argument. `WINEPREFIX='/home/kreyren/.wine-64' wine start /unix '/home/kreyren/.wine-64/drive_c/Program Files (x86)/Steam/steamapps/common/Dishonored2/Dishonored2.exe`
+         - Results in `Startup Error: Dishonored 2 requires Windows 7 or higher.` -> setting winecfg for 64-bit prefix.
 
 ## Lutris
 Installed lutris with lutris's winesteam and installed dihhonored 2 https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/Lutris_debug.log
