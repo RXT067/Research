@@ -123,6 +123,7 @@ https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/logblock-freeze.
          - Strace present here: https://drive.google.com/file/d/11qYCBeP-jOTTD8JdcKvd3M5cztFU4Jyv/view?usp=sharing (too big for github)
          - Video: https://www.youtube.com/watch?v=mAhcRqM55dc 
          - Using DXVK_HUD was suggested. `DXVK_HUD=devinfo,fps,frametimes,drawcalls,pipelines,memory,version' WINEPREFIX='/home/kreyren/.wine-64' wine start /unix '/home/kreyren/.wine-64/drive_c/Program Files (x86)/Steam/steamapps/common/Dishonored2/Dishonored2.exe`
+         - Shader cache relevant?
 
 ## Lutris
 Installed lutris with lutris's winesteam and installed dihhonored 2 https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/Lutris_debug.log
