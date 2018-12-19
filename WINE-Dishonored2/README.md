@@ -124,14 +124,7 @@ https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/logblock-freeze.
          - Video: https://www.youtube.com/watch?v=mAhcRqM55dc 
          - Using DXVK_HUD was suggested. `DXVK_HUD=devinfo,fps,frametimes,drawcalls,pipelines,memory,version' WINEPREFIX='/home/kreyren/.wine-64' wine start /unix '/home/kreyren/.wine-64/drive_c/Program Files (x86)/Steam/steamapps/common/Dishonored2/Dishonored2.exe`
          - Shader cache relevant? Source: https://www.phoronix.com/scan.php?page=news_item&px=DXVK-Shader-Cache-September
-            - <01> I know AMD a shader cache - used for Vulkan... But I don't have any AMD GPU's (too many bad experiences)... So I only know how to configure the Nvidia one.
-<kreyren> Why is shader cache relevant?
-<01> kreyren: For information about optimisation you might also want to wade through the dxvk issue tracker... https://github.com/doitsujin/dxvk/issues
-<kreyren> Noted, can you provide more info about shader cache? meaning why is it relevant to the issue?
-<01> There's all kinds of hacks linked to there, like frankin-modded proton builds, etc. :-)
-<01> kreyren: With Vulkan a shader has to be generated, and this is typically done by dxvk worker threads on the fly. These shaders can be cached in the driver or dxvk (or both - but that is probably redundant)
-<01> kreyren: You get stuttering when these shaders aren't ready in time for when they are needed. This is not an issue that affects DX11 to such a large extent.
-<01> Any cached shaders you have can be reused on subsequent play throughs, with the same vulkan, dxvk and graphics driver versions.
+            - https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/IRC_WINE_SUGGESTIOn
 
 ## Lutris
 Installed lutris with lutris's winesteam and installed dihhonored 2 https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/Lutris_debug.log
