@@ -9,6 +9,8 @@ Wine bug: https://bugs.winehq.org/show_bug.cgi?id=46307
 
 **STATUS:** Has performance issues = Silver(?)
 
+Made RSAID2 script (https://github.com/RXT067/Scripts/RSAID2.sh) that disables introduction.
+
 Using to debug:
 
 ```
