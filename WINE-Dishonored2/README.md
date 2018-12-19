@@ -16,6 +16,7 @@ WINEDEBUG='fixme-all,+dll' WINEARCH='win64' WINEPREFIX='/home/kreyren/.wine-64' 
 ```
 
 ## WINE
+Using winesteam only
 
 ### SOLVED(?): Missing libraries?
 
