@@ -117,6 +117,7 @@ https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/logblock-freeze.
    - I'm using gentoo the likelyhood of missing a libs/deps is high since gentoo came with bare minimum by default. Which libraries are required? Do i just download them from some site that hosts .dll and place them in required folders?
 
 - strace for wine was suggested,
+
 - Trying: `strace -o dishonored_trace.log -f -s 10000000 WINEARCH='win64' WINEPREFIX='/home/kreyren/.wine-64' wine /home/kreyren/.wine-64/drive_c/Program\ Files\ \(x86\)/Steam/steamapps/common/Dishonored2/Dishonored2.exe`
    - `wine start /unix '/home/kreyren/.wine-64/drive_c/Program Files (x86)/Steam/steamapps/common/Dishonored2/Dishonored2.exe`  was suggested, Source https://wiki.winehq.org/Start, 
       - Source  https://wiki.winehq.org/Wine_User%27s_Guide  - Section 3
@@ -134,9 +135,7 @@ https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/logblock-freeze.
             - updated system on multilib, reinstalled wine prefixes + game and upgraded system's mesa, vulkan-loader on 9999 = results in graphical issues, suspect mesa/vulkan-loader issue. Problems with performance may be related to shaders.
             - Reversed update on vulkan-loader+mesa = Fixed graphics issue.
 
-- Using: `DXVK_LOG_PATH='/home/kreyren/DXVK_DISHONORED.log' DXVK_LOG_LEVEL='debug' DXVK_STATE_CACHE='/tmp/dishonored' DXVK_HUD='devinfo,fps,frametimes,drawcalls,pipelines,memory,version' WINEPREFIX='/home/kreyren/.wine' wine start /unix '/home/kreyren/.wine/drive_c/Program Files (x86)/Steam/steamapps/common/Dishonored2/Dishonored2.exeDXVK_LOG_PATH='/home/kreyren/DXVK_DISHONORED.log' DXVK_LOG_LEVEL='debug' DXVK_STATE_CACHE='/tmp/dishonored' DXVK_HUD='devinfo,fps,frametimes,drawcalls,pipelines,memory,version' WINEPREFIX='/home/kreyren/.wine' wine start /unix '/home/kreyren/.wine/drive_c/Program Files (x86)/Steam/steamapps/common/Dishonored2/Dishonored2.exe'
-`
-   - 
+- Reworking approach
 
 
 ## Lutris
