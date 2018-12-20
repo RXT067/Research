@@ -134,7 +134,7 @@ https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/logblock-freeze.
             - updated system on multilib, reinstalled wine prefixes + game and upgraded system's mesa, vulkan-loader on 9999 = results in graphical issues, suspect mesa/vulkan-loader issue. Problems with performance may be related to shaders.
             - Reversed update on vulkan-loader+mesa = Fixed graphics issue.
 
- - Using: `DXVK_LOG_PATH='/home/kreyren/DXVK_DISHONORED.log' DXVK_LOG_LEVEL='debug' DXVK_STATE_CACHE='/tmp/dishonored' DXVK_HUD='devinfo,fps,frametimes,drawcalls,pipelines,memory,version' WINEPREFIX='/home/kreyren/.wine' wine start /unix '/home/kreyren/.wine/drive_c/Program Files (x86)/Steam/steamapps/common/Dishonored2/Dishonored2.exeDXVK_LOG_PATH='/home/kreyren/DXVK_DISHONORED.log' DXVK_LOG_LEVEL='debug' DXVK_STATE_CACHE='/tmp/dishonored' DXVK_HUD='devinfo,fps,frametimes,drawcalls,pipelines,memory,version' WINEPREFIX='/home/kreyren/.wine' wine start /unix '/home/kreyren/.wine/drive_c/Program Files (x86)/Steam/steamapps/common/Dishonored2/Dishonored2.exe'
+- Using: `DXVK_LOG_PATH='/home/kreyren/DXVK_DISHONORED.log' DXVK_LOG_LEVEL='debug' DXVK_STATE_CACHE='/tmp/dishonored' DXVK_HUD='devinfo,fps,frametimes,drawcalls,pipelines,memory,version' WINEPREFIX='/home/kreyren/.wine' wine start /unix '/home/kreyren/.wine/drive_c/Program Files (x86)/Steam/steamapps/common/Dishonored2/Dishonored2.exeDXVK_LOG_PATH='/home/kreyren/DXVK_DISHONORED.log' DXVK_LOG_LEVEL='debug' DXVK_STATE_CACHE='/tmp/dishonored' DXVK_HUD='devinfo,fps,frametimes,drawcalls,pipelines,memory,version' WINEPREFIX='/home/kreyren/.wine' wine start /unix '/home/kreyren/.wine/drive_c/Program Files (x86)/Steam/steamapps/common/Dishonored2/Dishonored2.exe'
 `
    - 
 
