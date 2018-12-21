@@ -25,6 +25,9 @@
 ## 1) you are doing it manually, not through portage, docs don't know portage. so they randomly take a name for a build folder, coincidental it's called build
 ## 2) they propose you to build in different folder out of runtime reasoning so I propose you to do the next thing
 # WARN: We are in sandbox chroot isolated from main system e.i: make install, pwd, etc. won't work as they should probably
+# doins/insinto
+## insinto where_i_want
+## doins what_i_want
 
 #KREY: D - /var/tmp/portage/media-gfx/NoxMentor-0.1/image/
 #KREY: P - NoxMentor-0.1
@@ -65,6 +68,9 @@ src_compile() {
 }
 
 src_install () {
-    insinto /opt/flameshot
-    
+  insinto /opt/flameshot
+  #let's copy this from inside WORKDIR, into the system folder
+  doins -r flameshot* 
+  # let's copy these libraries into the physical system folder /opt/flameshot.
+  doins *.o
 }
