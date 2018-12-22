@@ -158,7 +158,21 @@ game opens
 
 trying to remove dxvk + d3dx9 to verify DXVK issue = winetricks is unable to remove dlls.. such a pita
 
+reinstalled wineprefix
 
+xact + steam is installed
+
+set steam on win7
+
+enabled gallium9 in winecfg and is present in wine-any
+
+game doesnt' work on gallium9 = https://www.youtube.com/watch?v=OGqhoGWzj6E
+
+Installed d3dx9 = same result
+
+Disabled gallium9 in winecfg
+
+installed dxvk
 
 ## Lutris
 Installed lutris with lutris's winesteam and installed dihhonored 2 https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/Lutris_debug.log
