@@ -137,6 +137,28 @@ https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/logblock-freeze.
 
 - Reworking approach
 
+##### New controlled environment - performance issues
+wine-4.0-rc3 (Staging)
+
+Installed deps - `xact` `corefonts` which includes `xact` `andale` `arial` `comicsans` `courier` `georgia` `impact` `times` `trebuchet` `verdana` `webdings` `corefonts` `w_workaround_wine_bug-22053` `w_workaround_wine_bug-39403` `steam`.
+
+Steam is set on Win7
+
+Steam seems to install directX + Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030 (based on wine uninstaller)
+
+game won't open.
+
+trying to install d3dx9
+
+game won't open
+
+trying to install dxvk
+
+game opens
+
+trying to remove dxvk + d3dx9 to verify DXVK issue = winetricks is unable to remove dlls.. such a pita
+
+
 
 ## Lutris
 Installed lutris with lutris's winesteam and installed dihhonored 2 https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/Lutris_debug.log
