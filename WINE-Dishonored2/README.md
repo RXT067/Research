@@ -178,6 +178,8 @@ Same issue https://youtu.be/ZnQMfh3RBMs
 
 Trying to trace back DXVK version for doitsujin-senpai <3
 
+Added `+com_showLoadingScreen 0` to avoid loading screens
+
 Trying DXVK92 = Same issue, but seems less laggy
 
 trying DXVK90 = same issue
