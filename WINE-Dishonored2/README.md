@@ -178,6 +178,16 @@ Same issue https://youtu.be/ZnQMfh3RBMs
 
 Trying to trace back DXVK version for doitsujin-senpai <3
 
+Trying DXVK92 = Same issue, but seems less laggy
+
+trying DXVK90 = same issue
+
+trying DXVK81 = same issue
+
+DXVK80 = same issue 
+
+DXVK72 = Same issue, laggs are much worse
+
 ## Lutris
 Installed lutris with lutris's winesteam and installed dihhonored 2 https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/Lutris_debug.log
 
