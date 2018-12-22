@@ -32,12 +32,15 @@
 #KREY: D - /var/tmp/portage/media-gfx/NoxMentor-0.1/image/
 #KREY: P - NoxMentor-0.1
 #KREY: V - 
-#KREY: PV - 0.1
+#KREY: PV - 0.1 -> something/something-${PV}
 
+# E-build API
 EAPI=6
 
+inherit qmake-utils
+
 DESCRIPTION="Powerful yet simple to use screenshot software."
-KEYWORDS="amd64"
+KEYWORDS="~x86 ~amd64"
 HOMEPAGE="https://flameshot.js.org/"
 LICENSE="FreeArt GPL-3+ Apache-2.0"
 
@@ -52,7 +55,9 @@ DEPEND="
 	"
 
 RDEPEND="
-	dev-qt/qtcore" # SVG?
+	>=dev-qt/qtcore-5.3"
+
+# USE FLAGS
 
 src_configure () {
 	mkdir eazy-krey
