@@ -174,6 +174,10 @@ Disabled gallium9 in winecfg
 
 installed dxvk
 
+Same issue https://youtu.be/ZnQMfh3RBMs
+
+Trying to trace back DXVK version for doitsujin-senpai <3
+
 ## Lutris
 Installed lutris with lutris's winesteam and installed dihhonored 2 https://github.com/RXT067/Research/blob/master/WINE-Dishonored2/Lutris_debug.log
 
