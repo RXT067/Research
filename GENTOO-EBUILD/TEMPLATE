@@ -1,288 +1,109 @@
+# Krey's Template for Gentoo's ebuild EAPI 6
 # Copyright 1999-2018 Gentoo Authors, Kreyren (github.com/kreyren)
 # Distributed under the terms of the GNU General Public License v2
+# Based on master index https://devmanual.gentoo.org/
 
-EAPI=
+## OVERRIDES
+DEPEND=$DEPENDENCIES 
+RDEPEND=$RUNTIME_DEPENDENDIES
+PDEPEND=$POST_DEPENDENDANCIES
 
-inherid
-
-NAME="${PN}"
-CATEGORY="${PC}"
-
-DESCRIPTION=
-HOMEPAGE=
-
-KEYWORDS=
-
-SLOT="0"
-
-LICENSE=
-
-SRC_URI=
-
-IUSE=
-
-REQUIRED_USE=
-
-RESCRICT=
-
-DEPEND
-
-BDEPEND
-
-## Version: Work in progress
-
-# IMPROVEMENT(?):  take a look at dxvk / bobwya for extra ideas. btw, you should really use bobwya repo for wine as it comes with esync patches.
-# Make automatic with interactive
-
-# TODO: winetricks is annoying with GUI, sourcing them with ebuild might be more effective?
-## Related: https://github.com/Winetricks/winetricks/pull/1090
-
-
-# E-build API
 EAPI=6
 
-# inherid
+DESCRIPTION= # A short (not more than 80 characters) description of the package's purpose. Mandatory.
 
-NAME="leagueoflegends"
-## Forcing it above a filename to prevent issues if renamed.
+HOMEPAGE= #	Package's homepage. Mandatory (except for virtuals).
 
-CATEGORY="games-emulation"
-# TODO: make games-moba
+SRC_URI= # A list of source URIs for the package. Can contain USE-conditional parts - https://devmanual.gentoo.org/ebuild-writing/variables/index.html#src_uri
 
-DESCRIPTION="Multiplayer online battle arena video game developed and published by Riot Games."
-## Grabbed from wiki
+LICENSE= # The package's license, corresponding exactly (including case) to a file in licenses/. Mandatory (except for virtuals) - https://devmanual.gentoo.org/ebuild-writing/variables/index.html#license
 
-HOMEPAGE="https://${REGION}.leagueoflegends.com/"
-## Capitalization is irelevant for this URL
+SLOT= # The package's SLOT. Mandatory - https://devmanual.gentoo.org/ebuild-writing/variables/index.html#slot
 
-KEYWORDS="amd64 x86"
-# PBE will use testing
+KEYWORDS= # https://devmanual.gentoo.org/ebuild-writing/variables/index.html#keywords
 
-SLOT="0"
+IUSE= #	A list of all USE flags (excluding arch flags, but including USE_EXPAND flags) used within the ebuild - https://devmanual.gentoo.org/ebuild-writing/variables/index.html#iuse.
 
-LICENSE="2018 Riot Games, Inc. All rights reserved."
-## TODO: Verify if correct
+REQUIRED_USE= # A list of assertions that must be met by the configuration of USE flags to be valid for this ebuild - https://devmanual.gentoo.org/ebuild-writing/variables/index.html#required_use
 
-#SRC_URI="https://riotgamespatcher-a.akamaihd.net/releases/live/installer/deploy/League%20of%20Legends%20installer%20EUNE.exe"
-## Grabbed from lutris
+RESTRICT= #	A space-delimited list of portage features to restrict. Valid values are fetch, mirror, strip, test and userpriv. See man 5 ebuild for details.
 
-IUSE="staging run-exes vulkan mono" 
-## https://devmanual.gentoo.org/ebuild-writing/variables/index.html#iuse
-## wine-staging has staging use flag
+DEPENDENCIES= # A list of the package's build dependencies - https://devmanual.gentoo.org/general-concepts/dependencies/index.html
 
-#REQUIRED_USE="" https://devmanual.gentoo.org/ebuild-writing/variables/index.html#required_use
-## No need for REQUIRED_USE?
+RUNTIME_DEPENDENDIES= # https://devmanual.gentoo.org/general-concepts/dependencies/index.html
 
-RESTRICT="bindist,mirror,test,strip,fetch"
-## bindist   = Distribution of built packages is restricted.
-### Downloding installer from leagueoflegends.com == restricted(?)
-## mirror    = files in SRC_URI will not be downloaded from the GENTOO_MIRRORS.
-### Downloding from non-gentoo source
-## test 	 = do not run src_test even if user has FEATURES=test.
-### We won't compile, no need to test.
-## strip 	 = final binaries/libraries will not be stripped of debug symbols.
-### We won't compile, no need to strip. Trying to prevent corrruption.
+POST_DEPENDENDANCIES= # Use this only when RDEPEND would cause cyclic dependencies.
 
-#DEPEND=""
-## We won't compile no need for deps
+JAZZHANDS () {
+# JAZZHANDS, Krey's version of gentoo's shorthand that MAKES SENCE
+## https://devmanual.gentoo.org/ebuild-writing/variables/
 
-#BDEPEND=""
-## EAPI=7 function
+P=$PNAV
+## Package Name And Version
 
-RDEPEND="
-|| (
->=app-emulation/wine-staging-3.14
->=app-emulation/wine-any-3.14
-)
-=app-emulation/winetricks-99999999"
-## >=app-emulation/wine-any-3.14::gentoo[${MULTILIB_USEDEP},vulkan] ?
+CATEGORY=$PC 
+## Package Category
 
-PDEPEND=""
-## A list of packages to be installed (if possible) after the package is merged. Use this only when RDEPEND would cause cyclic dependencies.
-## No need atm
+PN=$PN
+## Package Name
 
-PROPERTIES="interactive"
-## A space-delimited list of properties, with conditional syntax support. interactive is the only valid value for now.
-## I have no hugging idea what it means and i'm scared that it starts talking at me.
-## TIP: See the cdrom eclass for PROPERTIES=interactive examples
+PV=$PV
+## Package Version
 
-#DOCS=""
-## An array or space-delimited list of documentation files for the default src_install function to install using dodoc. If undefined, a reasonable default list is used.
-## Useless? In theory i can install it with licence or something?.. with PORO document! 
+PR=$PR
+## Package Revision
 
-#HTML_DOCS=""
-## An array or space-delimited list of documentation files or directories for the einstalldocs function to install recursively.
-## Wth is this
+PVR=$PVAR
+## Package Version And Revision
+
+PF=$FPN
+## Full Package Name
+
+
+PORTDIR=/var/tmp/portage/${PC}/${PNAV}
+## PORTage DIRectory
+
+BUILDDIR=${PORTDIR}/build
+
+FILESDIR=${PORTDIR}/files
+
+WORKDIR=${PORTDIR}/work
+
+HOMEDIR=${PORTDIR}/home
+
+DISTDIR=${PORTDIR}/distdir
+
+IMAGEDIR=${PORTDIR}/image
+
+SOURCEDIR=${WORKDIR}/${PNAV}
+
+ROOT=/
 
 
 
+BUILDDIR=$PBD
+## Package Build Directory
 
+FILESDIR=$PFD
+## Package Files Directory
 
-jazzhands () {
-	##################################################################################
-	##               JAZZHANDS! (Krey's version of gentoo's short hands)            ##
-	##     License: None from gentoo can use this untill kreyren is ebuild master   ##
-	##################################################################################
+WORKDIR=$PWD
+## Package Work Directory
 
-	# Gentoo's variables are read-only it may cause issues
+HOMEDIR=$PHD
+## Package Home Directory
 
-	PN="${NAME}"
-	# PN   = Package Name
+DISTDIR=$PDD
+## Package Distribution Directory
 
-	PC="${CATEGORY}"
-	# PC   = Package Category
+IMAGEDIR=$PID
+## Package Image Directory
 
-	PV="${PV}"
-	# PV   = Package Version
+SOURCEDIR=$PSD
+## Package Source Directory
 
-	PNV="${PNV}"
-	# PNV  = Package Name Version
-
-	#PR="${PR}"
-	PR=""
-	# PR   = Package Revision
-
-	PVR="${PVR}"
-	# PVR  = Package Version Revision
-
-	FPN="${PN}-${PV}-${PR}"
-	# FPN  = Full Package Name
-
-	SOURCEDIR="/var/tmp/portage/${FPN}"
-
-	DISTDIR="${SOURCEDIR}/distdir"
-
-	WORKDIR="{PORTAGE_BUILDDIR}/work"
-
-	BUILDDIR="${SOURCEDIR}/build"
-
-	TEMPDIR="${SOURCEDIR}/image"
-	## Temporary Install Directory (Gentoo - D) ... don't ask me why do they call it 'D'
-
-	#FILESDIR="${SOURCEDIR}/files"
-
-	HOMEDIR="${SOURCEDIR}/homedir"
-
-	GAMEDIR="/opt/games"
-
-	LOLDIR="${GAMEDIR}/${NAME}-${REGION}"
-
-
-	# A   == 	All the source files for the package (excluding those which are not available because of USE flags).
-
-	EP="${D%/}${EPREFIX}/"
-	## Shorthand for ${D%/}${EPREFIX}/
-
-	#EROOT="${ROOT%/}${EPREFIX}/"
-	## Shorthand for ${ROOT%/}${EPREFIX}/
-
-	# ROOT=""
-	## The absolute path to the root directory into which the package is to be merged. Only allowed in pkg_* phases. (https://devmanual.gentoo.org/ebuild-writing/variables/index.html#root)
-	## Might be required
-
-	# DISTDIR=""
-	## Contains the path to the directory where all the files fetched for the package are stored.
-	## What?
-
-	# EPREFIX=""
-	## The normalised offset-prefix path of an offset installation.
-	## WHAAAT
-	## Prefix of what
-	## Offset meaning?
+ROOT=/ # I AM ROOT
 
 }
 
-
-
-
-region_selection () {
-	while [[ ${REGION} != @(EUNE|NA|EUW|BR|LAN|LAS|OCE|RU|JP|SEA) ]]; do 
-	echo "Select your region:
-	EUNE  - Europe Nordic and East
-	NA    - North America
-	EUW   - Europe West
-	BR    - Brazil
-	AN    - Latin America North
-	LAS   - Latin America South
-	OCE   - Oceania
-	RU    - Russia
-	TR    - Turkey
-	JP    - Japan
-	SEA   - South East Asia
-	"
-
-	read REGION
-
-done
-
-wget https://riotgamespatcher-a.akamaihd.net/releases/live/installer/deploy/League%20of%20Legends%20installer%20${REGION}.exe
-
-}
-
-pkg_setup () {
-	jazzhands
-
-	cd "${HOMEDIR}"
-
-	echo "WARNING: To unmerge remove ${GAMEDIR}/${NAME}-${REGION}, ebuild is unable to do that atm."
-	# TODO: Unable to unmerge
-
-	# == DISABLED ==
-	# Working around missing USER var.
-	# TODO: can i greb USER var somehow?
-	# VERIFY: `awk -F'[/:]' '{if ($3 >= 1000 && $3 != 65534) print $1}' /etc/passwd` 
-	#echo "Ebuild is unable to read USER var, please enter your username to which we install wine (case-sensitive!)"
-	#read USER
-
-	region_selection
-
-	mkdir -p "$LOLDIR"
-	# TODO: add option for WINE_USER make.conf config for WINEDIR.
-
-	# TODO: winetricks shoudn't run as root."
-	## IMPROVEMENT: Using chown to reset right after?
-	WINEDEBUG="-all" WINEPREFIX="${LOLDIR}" winetricks corefonts adobeair vcrun2008 vcrun2017 winxp glsl=disabled
-	## Adobeair = unconfirmed
-
-	WINEDEBUG="-all" WINEPREFIX="${LOLDIR}" wine "{HOMEDIR}/'League of Legends installer $REGION.exe'"
-
-	# https://appdb.winehq.org/objectManager.php?sClass=version&iId=36323 is mandatory
-	echo "Downloading Anti-Cheat patchset (Credit: Andrew Wesie)"
-	echo "WARNING: Those patches are safe in case you get banned sent a ticket on riot support and they will unban you."
-
-	wget "https://raw.githubusercontent.com/RXT067/krey-overlay/master/games-moba/leagueoflegends/patches/0003-Pretend-to-have-a-wow64-dll.patch"
-	wget "https://raw.githubusercontent.com/RXT067/krey-overlay/master/games-moba/leagueoflegends/patches/0006-Refactor-LdrInitializeThunk.patch"	
-	wget "https://raw.githubusercontent.com/RXT067/krey-overlay/master/games-moba/leagueoflegends/patches/0007-Refactor-RtlCreateUserThread-into-NtCreateThreadEx.patch"
-	wget "https://raw.githubusercontent.com/RXT067/krey-overlay/master/games-moba/leagueoflegends/patches/0009-Refactor-__wine_syscall_dispatcher-for-i386.patch"
-
-	mv "${HOMEDIR}/0003-Pretend-to-have-a-wow64-dll.patch" "${FILESDIR}/"
-	mv "${HOMEDIR}/0006-Refactor-LdrInitializeThunk.patch" "${FILESDIR}/"
-	mv "${HOMEDIR}/0007-Refactor-RtlCreateUserThread-into-NtCreateThreadEx.patch" "${FILESDIR}/"
-	mv "${HOMEDIR}/0009-Refactor-__wine_syscall_dispatcher-for-i386.patch" "${FILESDIR}/"
-
-	# TODO: https://devmanual.gentoo.org/ebuild-writing/misc-files/patches/index.html
-	# IMPROVEMENT: improve http://mywiki.wooledge.org/glob#extglob
-	# IMPROVEMENT: http://ix.io/1wHD
-	#if [[ -e ${FILESDIR}/@(0003-Pretend-to-have-a-wow64-dll.patch&0006-Refactor-LdrInitializeThunk.patch&0007-Refactor-RtlCreateUserThread-into-NtCreateThreadEx.patch&0009-Refactor-__wine_syscall_dispatcher-for-i386.patch) ]]; then
-	if [[ -e "${FILESDIR}/0003-Pretend-to-have-a-wow64-dll.patch" ]] && [[ -e "${FILESDIR}/0006-Refactor-LdrInitializeThunk.patch" ]] && [[ -e "${FILESDIR}/0007-Refactor-RtlCreateUserThread-into-NtCreateThreadEx.patch" ]] && [[ -e "${FILESDIR}/0009-Refactor-__wine_syscall_dispatcher-for-i386.patch" ]]; then
-		epatch -p1 "${FILESDIR}/0003-Pretend-to-have-a-wow64-dll.patch"
-		epatch -p1 "${FILESDIR}/0006-Refactor-LdrInitializeThunk.patch"
-		epatch -p1 "${FILESDIR}/0007-Refactor-RtlCreateUserThread-into-NtCreateThreadEx.patch"
-		epatch -p1 "${FILESDIR}/0009-Refactor-__wine_syscall_dispatcher-for-i386.patch"
-
-		else
-			echo "FATAL: Patches was NOT detected in ${FILESDIR}"
-			# TODO: try to re-fetch?
-			echo "Please apply them manually from https://github.com/RXT067/krey-overlay/tree/master/games-moba/leagueoflegends/patches"
-	fi
-
-	echo "WARNING: TEST IN PRACTICE TOOL BEFORE GAME!"
-
-	echo "INFO: Report issues on https://github.com/RXT067/krey-overlay, any info is helpful."
-
-}
-
-# IMPROVEMENT 
-## afair pkg_postinstall is when you get outside sandbox but I suggest to avoid that and just creat script for users to run afterwards
-## some of users may not have different wine directories and it may cause problems for them
-## if you want to make your ebuild for many users respect that
+# FUNCTIONS - https://devmanual.gentoo.org/ebuild-writing/functions/index.html
