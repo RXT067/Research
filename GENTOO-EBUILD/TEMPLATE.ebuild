@@ -107,3 +107,148 @@ ROOT=/ # I AM ROOT
 }
 
 # FUNCTIONS - https://devmanual.gentoo.org/ebuild-writing/functions/index.html
+
+pkg_pretend () { 
+# run sanity checks for a package during dependency calculation time
+
+	if use kernel_linux ; then
+		if [[ -e "${ROOT}"/usr/src/linux/.config ]] ; then
+			if kernel_is lt 2 6 30 ; then
+				CONFIG_CHECK="FUSE_FS"
+				ERROR_FUSE_FS="this is an unrealistic testcase..."
+				check_extra_config
+			fi
+		fi
+	fi
+}
+
+pkg_nofetch () {
+# Tell the user how to deal with fetch-restricted packages
+
+	[ -z "${SRC_URI}" ] && return
+
+	echo "!!! The following are listed in SRC_URI for ${PN}:"
+	for MYFILE in `echo ${SRC_URI}`; do
+		echo "!!!   $MYFILE"
+	done
+	return
+}
+
+pkg_setup () {
+# https://devmanual.gentoo.org/ebuild-writing/functions/pkg_setup/index.html
+
+	return
+}
+
+src_unpack () {
+# Extract source packages and do any necessary patching or fixes.
+
+	if [ "${A}" != "" ]; then
+		unpack ${A}
+	fi
+}
+
+src_prepare () {
+# Prepare source packages and do any necessary patching or fixes.
+
+	if declare -p PATCHES | grep -q "^declare -a "; then
+        [[ -n ${PATCHES[@]} ]] && eapply "${PATCHES[@]}"
+    else
+        [[ -n ${PATCHES} ]] && eapply ${PATCHES}
+    fi
+    eapply_user
+}
+
+src_configure () {
+# Configure the package.
+
+	if [[ -x ${ECONF_SOURCE:-.}/configure ]] ; then
+		econf
+	fi
+}
+
+src_compile () {
+# Configure and build the package.
+
+	if [ -x ./configure ]; then
+		econf
+	fi
+
+	if [ -f Makefile ] || [ -f GNUmakefile ] || [ -f makefile ]; then
+		emake || die "emake failed"
+	fi
+}
+
+src_test () {
+# Run pre-install test scripts
+
+	if emake check -n &> /dev/null; then
+		emake check
+	elif emake test -n &> /dev/null; then
+		emake test
+	fi
+}
+
+src_install () {
+# Install a package to ${IMAGEDIR}
+
+	if [[ -f Makefile ]] || [[ -f GNUmakefile ]] || [[ -f makefile ]] ; then
+		emake DESTDIR="${D}" install
+	fi
+
+	if ! declare -p DOCS >/dev/null 2>&1 ; then
+		local d
+		for d in README* ChangeLog AUTHORS NEWS TODO CHANGES THANKS BUGS \
+				FAQ CREDITS CHANGELOG ; do
+			[[ -s "${d}" ]] && dodoc "${d}"
+		done
+	elif declare -p DOCS | grep -q "^declare -a " ; then
+		dodoc "${DOCS[@]}"
+	else
+		dodoc ${DOCS}
+	fi
+}
+
+pkg_preinstall () {
+# Called before image is installed to ${ROOT}
+
+	enewgroup foo
+	enewuser foo -1 /bin/false /dev/null foo
+}
+
+pkg_postinst () {
+# Called after image is installed to ${ROOT}
+
+	if $OLD_FLUXBOX_VERSION ; then
+		ewarn "You must restart fluxbox before using the [include] /directory/"
+		ewarn "feature if you are upgrading from an older fluxbox!"
+		ewarn " "
+	fi
+	elog "If you experience font problems, or if fluxbox takes a very"
+	elog "long time to start up, please try the 'disablexmb' USE flag."
+	elog "If that fails, please report bugs upstream."
+}
+
+pkg_prerm () {
+# Called before a package is unmerged
+
+	return
+}
+
+pkg_postrm () {
+# Called after image is installed to ${ROOT}
+
+	return
+}
+
+pkg_config () {
+# Run any special post-install configuration
+
+	eerror "This ebuild does not have a config function."
+}
+
+pkg_info () {
+# display information about a package
+
+	return
+}
