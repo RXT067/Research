@@ -11,6 +11,8 @@ Wine bug: https://bugs.winehq.org/show_bug.cgi?id=46307
 
 Made RSAID2 script (https://github.com/RXT067/Scripts/RSAID2.sh) that disables introduction.
 
+CONCLUSION: DXVK Regression (https://github.com/ValveSoftware/Proton/issues/823)
+
 Using to debug:
 
 ```
