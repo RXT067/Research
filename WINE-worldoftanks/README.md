@@ -36,3 +36,48 @@ Turned off uploading
 
 Fixed the launcher.. # TODO: Needs investigating 
 
+Same issue: https://paste.pound-python.org/show/nwsge6e2b8hW02ySQbeX/
+
+seems as connection problem
+
+win7 wasn't set, trying again..
+
+Same issue
+
+trying gallium9
+
+Same issue 
+
+Adding `WINEPREFIX="/home/kreyren/.wine-wot" winetricks d3dx9 d3dx10 d3dx11_43 dotnet472 dotnet40 dxvk vcrun2012 xact`
+
+```
+016d:err:rpc:I_RpcReceive we got fault packet with status 0x3e6
+00df:fixme:dbghelp:elf_search_auxv can't find symbol in module
+```
+investigating 
+
+Related: https://forum.winehq.org/viewtopic.php?f=8&t=30225
+
+`WINEPREFIX="/home/kreyren/.wine-wot" wine notepad` is not affected => WOT issue
+
+Related: https://appdb.winehq.org/objectManager.php?sClass=application&iId=18336
+
+adding vcrun2015 with --force
+
+Related: https://lutris.net/games/install/7701/view
+
+Trying w10
+
+Same issue
+
+== NEXT
+
+trying proton
+
+Proton doesn't care 
+
+== NEXT 
+
+Related: https://www.playonlinux.com/en/app-1592-World_Of_Tanks.html
+
+Trying POL 
