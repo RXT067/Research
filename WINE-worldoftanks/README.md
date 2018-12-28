@@ -34,3 +34,5 @@ ei8 is not working on multilib prefix?
 
 Turned off uploading
 
+Fixed the launcher.. # TODO: Needs investigating 
+
