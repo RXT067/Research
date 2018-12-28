@@ -80,4 +80,18 @@ Proton doesn't care
 
 Related: https://www.playonlinux.com/en/app-1592-World_Of_Tanks.html
 
-Trying POL 
+Trying POL
+
+Won't open https://paste.pound-python.org/show/RF3lnR7wGwKroKXhJizD/
+
+== NEXT
+
+Trying lutris
+
+Wont even download..
+
+== NEXT
+
+Give up
+
+
