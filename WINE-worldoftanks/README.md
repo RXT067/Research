@@ -1,3 +1,7 @@
+Related: https://bugs.winehq.org/show_bug.cgi?id=46378
+
+======
+
 Clear wineprefix
 
 winetricks dxvk corefonts
