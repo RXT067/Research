@@ -3,12 +3,12 @@
 # Distributed under the terms of the GNU General Public License v2
 # Based on master index https://devmanual.gentoo.org/
 
+EAPI=6
+
 ## OVERRIDES
 DEPEND=$DEPENDENCIES 
 RDEPEND=$RUNTIME_DEPENDENDIES
 PDEPEND=$POST_DEPENDENDANCIES
-
-EAPI=6
 
 DESCRIPTION= # A short (not more than 80 characters) description of the package's purpose. Mandatory.
 
@@ -60,24 +60,25 @@ PF=$FPN
 ## Full Package Name
 
 
-PORTDIR=/var/tmp/portage/${PC}/${PNAV}
+PORTDIR=/var/tmp/portage
 ## PORTage DIRectory
 
-BUILDDIR=${PORTDIR}/build
+PACKDIR=${PORTDIR}/${PC}/${PNAV}
+## PACKage DIRectory
 
-FILESDIR=${PORTDIR}/files
+BUILDDIR=${PACKDIR}/build
 
-WORKDIR=${PORTDIR}/work
+#FILESDIR=${PACKDIR}/files
 
-HOMEDIR=${PORTDIR}/home
+#WORKDIR=${PACKDIR}/work
 
-DISTDIR=${PORTDIR}/distdir
+HOMEDIR=${PACKDIR}/homedir
 
-IMAGEDIR=${PORTDIR}/image
+DISTDIR=${PACKDIR}/distdir
 
-SOURCEDIR=${WORKDIR}/${PNAV}
+IMAGEDIR=${PACKDIR}/image
 
-ROOT=/
+SOURCEDIR=${PACKDIR}/${PNAV}
 
 
 
