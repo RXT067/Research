@@ -30,87 +30,31 @@ if [[ $PLAYONLINUX=="" ]]; then
 else
 	source "$PLAYONLINUX/lib/sources"
 fi
- 
-POL_GetSetupImages "URL"
-## Gets images(?)
- 
-POL_SetupWindow_Init 
-## Initiates Setup windows (GUI)
 
-POL_RequiredVersion "4.0.18"
-## Checks version of POL?
 
-POL_Debug_Fatal "<MESSAGE>"
-## Fails the installation with a message
+## FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/tree/df9e090b4db5b7a41f72145877cc541b908c319b/lib
 
-POL_SetupWindow_SetID 1135
-## ID of something(?)
-         
-POL_Debug_Init
-## Dunno (?)
- 
-POL_SetupWindow_presentation "League of Legends" "Riot" "http://www.riotgames.com/" "Quentin PÂRIS, BlondVador" "LeagueOfLegends"
-## Dunno (?)
- 
-POL_SetupWindow_InstallMethod "DOWNLOAD,LOCAL"
-## Dunno (?)
+### DEBUG FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/debug.lib 
 
-POL_SetupWindow_browse ""
-## Dunno (?)
- 
-POL_System_TmpCreate "$PREFIX"
-## Dunno (?)
+### DEPRECATED FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/deprecated.lib
 
-POL_SetupWindow_menu 
-## Dunno (?)
+### DOSBOX FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/dosbox.lib
 
-POL_Call 
-## Dunno (?)
- 
-POL_System_SetArch "x86"
-## Sets arch (?)
+### POL FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/playonlinux.lib
 
-POL_Wine_SelectPrefix "$PREFIX"
-## Selects prefix (?)
+### PLUGINS FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/plugins.lib
 
-POL_Wine_PrefixCreate "$WINEVERSION"
-## Dunno (?)
- 
-POL_Call POL_Install_<winetricks_dependency>
-## Installs dependency from winetricks (?)
- 
-Set_OS "winxp"
-## Sets OS environment for WINE
- 
-POL_SetupWindow_message "something?"
-## Sends Window message (?)
- 
-POL_Wine_WaitBefore "$TITLE"
-## Dunno (?)
+### SCRIPT FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/scripts.lib
 
-POL_Wine "$FULL_INSTALLER"
-## Dunno (?)
- 
-POL_Wine_SetVideoDriver
-## Set Graphic Card informations keys for wine
- 
-POL_Call POL_Function_OverrideDLL builtin,native dnsapi
-## Sets DLL Override for dnsapi
+### SETUP WINDOW FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/setupwindow.lib
 
-POL_Shortcut "LeagueClient.exe" "$SHORTCUT_NAME" "$SHORTCUT_NAME.png" "" "Game;RolePlaying;"
-## Sets shortcut (?)
- 
-POL_System_TmpDelete
-## Wipes /tmp/POL-something (?)
+### SOURCES FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/sources
 
-POL_SetupWindow_question "something?"
-## Asks end-user for something?
+### VARIABLE FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/variables
 
-POL_Browser "${FORUM_URL}"
-## Opens a browser(?)
- 
-POL_SetupWindow_Close
-## Closes Setup Window
+### WEBSITE FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/website.lib
+
+### WINE FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/wine.lib
 
 exit 0
 ## Closes.. something(?)
