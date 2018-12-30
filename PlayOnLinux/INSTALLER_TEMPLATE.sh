@@ -44,7 +44,6 @@ fi
 # Standartization - http://wiki.playonlinux.com/index.php/Scripting_-_Chapter_9:_Standardization
 # Script translation - http://wiki.playonlinux.com/index.php/Scripting_-_Chapter_10:_Script_Translation
 # List of functions - http://wiki.playonlinux.com/index.php/Scripting_-_Chapter_11:_List_of_Functions
-# 
 
 ## FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/tree/df9e090b4db5b7a41f72145877cc541b908c319b/lib
 # DEBUG FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/debug.lib 
