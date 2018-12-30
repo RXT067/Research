@@ -47,28 +47,17 @@ fi
 # 
 
 ## FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/tree/df9e090b4db5b7a41f72145877cc541b908c319b/lib
-
-### DEBUG FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/debug.lib 
-
-### DEPRECATED FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/deprecated.lib
-
-### DOSBOX FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/dosbox.lib
-
-### POL FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/playonlinux.lib
-
-### PLUGINS FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/plugins.lib
-
-### SCRIPT FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/scripts.lib
-
-### SETUP WINDOW FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/setupwindow.lib
-
-### SOURCES FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/sources
-
-### VARIABLE FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/variables
-
-### WEBSITE FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/website.lib
-
-### WINE FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/wine.lib
+# DEBUG FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/debug.lib 
+# DEPRECATED FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/deprecated.lib
+# DOSBOX FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/dosbox.lib
+# POL FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/playonlinux.lib
+# PLUGINS FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/plugins.lib
+# SCRIPT FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/scripts.lib
+# SETUP WINDOW FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/setupwindow.lib
+# SOURCES FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/sources
+# VARIABLE FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/variables
+# WEBSITE FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/website.lib
+# WINE FUNCTIONS - https://github.com/PlayOnLinux/POL-POM-4/blob/df9e090b4db5b7a41f72145877cc541b908c319b/lib/wine.lib
 
 exit 0
 ## Closes.. something(?)
