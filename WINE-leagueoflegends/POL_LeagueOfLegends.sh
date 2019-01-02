@@ -42,6 +42,7 @@
 #       - Added todo for gallium9 patches which improve performance.
 #       - Added other regions to the installer
 #       - Added support for system wine (?)
+#       - Removed x86 arch which is limiting (should be invoked on multilib wine)
  
 [ "$PLAYONLINUX" = "" ] && exit 0
 source "$PLAYONLINUX/lib/sources"
@@ -50,7 +51,8 @@ WINE_CHECK=$(wine --version); IFS=- read -r _ WINE_VERSION WINE_REVISION _ <<<"$
 
 if [[ -e $(command -v wine) ]] && [[ WINE_VERSION -ge 3.21 ]] && [[ $(wine --version | grep -o "(Staging)") == "(Staging)" ]]; then
     echo "WINE is sufficient" &> /dev/null
-
+    echo "FIXME: Using system wine"
+    break
 
     else
         echo "FATAL: WINE is not sufficient"
