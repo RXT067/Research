@@ -38,13 +38,27 @@
 #       - upgrade download urls files
 # (2018-12-29) 14:33:41 (UTC) - Jacob Hrbek
 #       - Added adobeair dependency which is required to fix slow launcher
-#       - Added todo for glsl=disabled which is required based on my research.
+#       - Added GLSL disable that is required based on WineHQ
 #       - Added todo for gallium9 patches which improve performance.
+#       - Added other regions to the installer
+#       - Added support for system wine (?)
  
 [ "$PLAYONLINUX" = "" ] && exit 0
 source "$PLAYONLINUX/lib/sources"
  
-WINEVERSION="3.21-staging"
+WINE_CHECK=$(wine --version); IFS=- read -r _ WINE_VERSION WINE_REVISION _ <<<"$WINE_CHECK"; 
+
+if [[ -e $(command -v wine) ]] && [[ WINE_VERSION -ge 3.21 ]] && [[ $(wine --version | grep -o "(Staging)") == "(Staging)" ]]; then
+    echo "WINE is sufficient" &> /dev/null
+
+
+    else
+        echo "FATAL: WINE is not sufficient"
+        expected "Wine 3.21-staging or higher"
+        WINEVERSION="3.21-staging"
+        USING_POL_WINE=TRUE
+        exit 0
+fi
  
 TITLE="League of Legends"
 PREFIX="LeagueOfLegends"
@@ -98,6 +112,38 @@ else # DOWNLOAD
             DOWNLOAD_URL="https://riotgamespatcher-a.akamaihd.net/releases/live/installer/deploy/League%20of%20Legends%20installer%20EUNE.exe"
             $DOWNLOAD_MD5=""
             ;;
+        "$(eval_gettext 'Brazil')")
+            DOWNLOAD_URL="https://riotgamespatcher-a.akamaihd.net/releases/live/installer/deploy/League%20of%20Legends%20installer%20BR.exe"
+            $DOWNLOAD_MD5=""
+            ;;
+        "$(eval_gettext 'AN')")
+            DOWNLOAD_URL="https://riotgamespatcher-a.akamaihd.net/releases/live/installer/deploy/League%20of%20Legends%20installer%20AN.exe"
+            $DOWNLOAD_MD5=""
+            ;;
+        "$(eval_gettext 'LAS')")
+            DOWNLOAD_URL="https://riotgamespatcher-a.akamaihd.net/releases/live/installer/deploy/League%20of%20Legends%20installer%20LAS.exe"
+            $DOWNLOAD_MD5=""
+            ;;
+        "$(eval_gettext 'OCE')")
+            DOWNLOAD_URL="https://riotgamespatcher-a.akamaihd.net/releases/live/installer/deploy/League%20of%20Legends%20installer%20OCE.exe"
+            $DOWNLOAD_MD5=""
+            ;;
+        "$(eval_gettext 'RU')")
+            DOWNLOAD_URL="https://riotgamespatcher-a.akamaihd.net/releases/live/installer/deploy/League%20of%20Legends%20installer%20RU.exe"
+            $DOWNLOAD_MD5=""
+            ;;
+        "$(eval_gettext 'TR')")
+            DOWNLOAD_URL="https://riotgamespatcher-a.akamaihd.net/releases/live/installer/deploy/League%20of%20Legends%20installer%20TR.exe"
+            $DOWNLOAD_MD5=""
+            ;;
+        "$(eval_gettext 'JP')")
+            DOWNLOAD_URL="https://riotgamespatcher-a.akamaihd.net/releases/live/installer/deploy/League%20of%20Legends%20installer%20JP.exe"
+            $DOWNLOAD_MD5=""
+            ;;
+        "$(eval_gettext 'SEA')")
+            DOWNLOAD_URL="https://riotgamespatcher-a.akamaihd.net/releases/live/installer/deploy/League%20of%20Legends%20installer%20SEA.exe"
+            $DOWNLOAD_MD5=""
+            ;;
     esac
     DOWNLOAD_FILE="$POL_System_TmpDir/$(basename "$DOWNLOAD_URL")"
  
@@ -106,19 +152,22 @@ else # DOWNLOAD
     FULL_INSTALLER="$DOWNLOAD_FILE"
 fi
  
-POL_System_SetArch "x86"
+# POL_System_SetArch "x86" - TODO: Can POL make multilib wineprefix?
 POL_Wine_SelectPrefix "$PREFIX"
-POL_Wine_PrefixCreate "$WINEVERSION"
+
+if [[ USING_POL_WINE=TRUE ]]; then
+    POL_Wine_PrefixCreate "$WINEVERSION" 
+fi
  
 # Dependencies
 POL_Call POL_Install_corefonts
-POL_Call POL_Install_vcrun2005
 POL_Call POL_Install_vcrun2008
+POL_Call POL_Install_vcrun2017
 POL_Call POL_Install_d3dx9
 POL_Call POL_Install_adobeair
 
 Set_GLSL Off
-# TODO: glsl=disabled is required
+
 # TODO: Gallium9 patches improve performance in-game.
  
 Set_OS "winxp"
