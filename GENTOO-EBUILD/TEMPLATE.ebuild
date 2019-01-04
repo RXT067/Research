@@ -10,6 +10,13 @@ DEPEND=$DEPENDENCIES
 RDEPEND=$RUNTIME_DEPENDENDIES
 PDEPEND=$POST_DEPENDENDANCIES
 
+## Workaround for non-standart version naming.
+if [[ $PV == "*.*.*_alpha" ]]; then
+	PV=${PV%_alpha}-alpha
+	# PV=${PV/%_alpha/-alpha}
+	# INFO : http://mywiki.wooledge.org/BashFAQ/100 
+fi
+
 DESCRIPTION= # A short (not more than 80 characters) description of the package's purpose. Mandatory.
 
 HOMEPAGE= #	Package's homepage. Mandatory (except for virtuals).
