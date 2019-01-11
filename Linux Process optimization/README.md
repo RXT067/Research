@@ -5,6 +5,8 @@ Expected: if 'important app' needs system resources -> share them untill it's sa
 ### MISC
 Lower your MAKEOPTS -> unemergefull, would cause slow compilation and affect 'important app'.
 
+Since Linux 2.6.23, the default scheduler is CFS, the "Completely Fair Scheduler". The CFS scheduler replaced the earlier "O(1)" scheduler. - http://man7.org/linux/man-pages/man7/sched.7.html
+
 ### NICE
 PORTAGE_NICENESS="19" is not sufficient assuming problem with a RAM -> if game needs lots of RAM and portage pulls package that needs more RAM then it's physically available the system is going to hard freeze.
 
@@ -20,4 +22,9 @@ Developed by google ppl
 ### SCHED
 `chrt` command in linux
 - it manages SCHED_* variables that are recognized in linux(?)
+- Linux kernel has a scheduler - TODO: find a corresponding kernel configuration
+  - is controlled by SCHED_* variables
+
+
+
 
