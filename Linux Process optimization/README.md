@@ -19,3 +19,5 @@ Developed by google ppl
 
 ### SCHED
 `chrt` command in linux
+- it manages SCHED_* variables that are recognized in linux(?)
+
