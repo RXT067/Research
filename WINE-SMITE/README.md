@@ -24,4 +24,4 @@ kreyren@dreamon ~/Games/SMITE/drive_c/users/kreyren/Desktop $ cat Smite.ink
 cat: Smite.ink: No such file or directory
 ```
 
-Relevant http://forums.smitegame.com/showthread.php?181616-Bad-command-line-(SMITE)
+Relevant http://forums.smitegame.com/showthread.php?181616-Bad-command-line-(SMITE) -> Hugging useless
