@@ -17,3 +17,9 @@ Path=/home/kreyren/Games/SMITE/dosdevices/c:/Program Files (x86)/Hi-Rez Studios
 Icon=C288_Icon300.0
 StartupWMClass=hirezlauncherui.exe
 ```
+Interesting..
+
+```
+kreyren@dreamon ~/Games/SMITE/drive_c/users/kreyren/Desktop $ cat Smite.ink
+cat: Smite.ink: No such file or directory
+```
