@@ -109,4 +109,5 @@ Trying to install dotnet472 - Download(?), Why did it fail on proton? -> results
 Relevant https://github.com/ValveSoftware/Proton/issues/2208#
 - `vcrun2012` is mandatory!
 - `directx9` is mandatory!
+  - invoked `WINEPREFIX="/home/kreyren/Games/SMITE" winetricks d3dx9`
 - Removed vcrun2008 and vcrun2017
