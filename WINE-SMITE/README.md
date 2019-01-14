@@ -103,3 +103,7 @@ C++ (vcrun) is mandatory? Installed vcrun2008 and vcrun2017 -> same issue
 Invoked `WINEPREFIX="/home/kreyren/Games/SMITE" winetricks --force winxp vcrun2008 vcrun2017`
 
 Results in `bad command line` error
+
+Trying to install dotnet472 - Download(?), Why did it fail on proton? -> results in error after https://i.imgur.com/0uqoY64.png
+
+
