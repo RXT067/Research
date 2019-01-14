@@ -111,3 +111,5 @@ Relevant https://github.com/ValveSoftware/Proton/issues/2208#
 - `directx9` is mandatory!
   - invoked `WINEPREFIX="/home/kreyren/Games/SMITE" winetricks d3dx9`
 - Removed vcrun2008 and vcrun2017
+
+`bad command line` error is still present
