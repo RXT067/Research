@@ -26,4 +26,6 @@ cat: Smite.ink: No such file or directory
 
 Relevant: http://forums.smitegame.com/showthread.php?181616-Bad-command-line-(SMITE) -> Hugging useless
 
-Relevant: http://forums.paladins.com/showthread.php?87221-Command-Line-error
+Relevant: http://forums.paladins.com/showthread.php?87221-Command-Line-error -> somewhat helpful
+
+Invoked `kreyren@dreamon ~/Games/SMITE/drive_c/Program Files (x86)/Hi-Rez Studios $ WINEPREFIX="/home/kreyren/Games/SMITE" wine SelfUpdater.exe`
