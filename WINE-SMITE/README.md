@@ -91,9 +91,15 @@ System.TypeInitializationException: The type initializer for 'Hirez.Patcher.Patc
 ```
 
 Relevant : https://steamcommunity.com/app/386360/discussions/2/1474222595302379301/
-- ```
+
+```
 3. In SMITE launcher, click on cog button in left bottom corner, then click on "troubleshoot", then try to re-run prerequisites, if it didn't helped, validate/repair and reinstall. You want to disable your antivirus while doing this, to prevent corrupted visual c++ redistributable and visual studio installation. Fixes msvcp110.dll error.
 64-bit Visual C++ Redist is NOT included in prerequisities!!! Google it!!!
 ```
 
-C++ is mandatory? 
+C++ (vcrun) is mandatory? Installed vcrun2008 and vcrun2017 -> same issue
+- Warned about this may fail on non-XP version -> trying winxp
+
+Invoked `WINEPREFIX="/home/kreyren/Games/SMITE" winetricks --force winxp vcrun2008 vcrun2017`
+
+Results in `bad command line` error
