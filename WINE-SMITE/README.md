@@ -90,3 +90,5 @@ System.TypeInitializationException: The type initializer for 'Hirez.Patcher.Patc
   at LauncherV7.Program.Main (System.String[] args) [0x0000c] in <82e344d7cfe84c8aa0d20d1fdfeab1ce>:0 
 ```
 
+Relevant : https://steamcommunity.com/app/386360/discussions/2/1474222595302379301/
+
