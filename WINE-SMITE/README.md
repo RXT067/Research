@@ -106,4 +106,5 @@ Results in `bad command line` error
 
 Trying to install dotnet472 - Download(?), Why did it fail on proton? -> results in error after https://i.imgur.com/0uqoY64.png
 
-
+Relevant https://github.com/ValveSoftware/Proton/issues/2208#
+- vcrun2012 is mandatory!
