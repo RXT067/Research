@@ -69,4 +69,5 @@ Couldn't get a file descriptor referring to the console
  - radeonsi is disabled in grub and not loaded.
  - xauth?
 
-`nano /etc/portage/package.use/00-custom.use -> Segmentation fault` .. why?
+`nano /etc/portage/package.use/00-custom.use -> Segmentation fault`
+- File is present and non-corrupted -> nano broken?
