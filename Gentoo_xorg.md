@@ -1,5 +1,6 @@
 This is a research for xorg on Gentoo using USE="-*" on amdgpu.
 
+FROM ROOT
 ```
 sysresccd / # startx-lxqt
 /usr/bin/startx-lxqt: line 146: hostname: command not found
@@ -35,4 +36,11 @@ Please consult the The X.Org Foundation support
 ^Cxinit: giving up
 xinit: unable to connect to X server: Connection refused
 xinit: unexpected signal 2
+```
+
+FROM USER:
+```
+startx-lxqt
+/usr/bin/startx-lxqt: line 146: hostname: command not found
+xauth:  error in locking authority file /home/kreyren/.serverauth.4116
 ```
