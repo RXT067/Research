@@ -67,43 +67,8 @@ Couldn't get a file descriptor referring to the console
   - is emerged.. ?
 - system didn't change resolution once booted -> AMDGPU not loaded, confirmed in `lspci -k | grep kernel`.
   - radeonsi is disabled in grub and not loaded.
-- xauth?
-
-``` 
-kreyren@sysresccd / $ sudo startx
-Password: 
-/usr/bin/startx: line 146: hostname: command not found
-xauth:  file /root/.serverauth.15040 does not exist
-
-
-X.Org X Server 1.20.3
-X Protocol Version 11, Revision 0
-Build Operating System: Linux 4.18.18-gentoo-r1 x86_64 Gentoo
-Current Operating System: Linux sysresccd 4.14.80-std532-amd64 #2 SMP Sun Nov 11 18:59:44 UTC 2018 x86_64
-Kernel command line: initrd=initram.igz BOOT_IMAGE=rescue64 docache
-Build Date: 05 February 2019  05:09:00AM
- 
-Current version of pixman: 0.36.0
-	Before reporting problems, check http://wiki.x.org
-	to make sure that you have the latest version.
-Markers: (--) probed, (**) from config file, (==) default setting,
-	(++) from command line, (!!) notice, (II) informational,
-	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
-(==) Log file: "/var/log/Xorg.1.log", Time: Tue Feb  5 06:17:38 2019
-(==) Using config directory: "/etc/X11/xorg.conf.d"
-(==) Using system config directory "/usr/share/X11/xorg.conf.d"
-(EE) 
-Fatal server error:
-(EE) no screens found(EE) 
-(EE) 
-Please consult the The X.Org Foundation support 
-	 at http://wiki.x.org
- for help. 
-(EE) Please also check the log file at "/var/log/Xorg.1.log" for additional information.
-(EE) 
-(EE) Server terminated with error (1). Closing log file.
-
-```
+  - xauth?
+    - from https://www.starnet.com/xwin32kb/error-in-locking-authority-file/ invoked `sudo chmod 400 .Xauthority`
 
 **nano /etc/portage/package.use/00-custom.use -> Segmentation fault**
 - File is present and non-corrupted -> nano broken? -> confirmed broken nano -> re-emerging needs optimization.. nano works in different chroot.. wth? killed broken chroot using new chroot -> re-emerging nano with optimization anyway
