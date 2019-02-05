@@ -44,4 +44,19 @@ startx-lxqt
 /usr/bin/startx-lxqt: line 146: hostname: command not found
 xauth:  error in locking authority file /home/kreyren/.serverauth.4116
 xauth:  timeout in locking authority file /root/.Xauthority
+^C^Cxauth:  timeout in locking authority file /root/.Xauthority
+
+(EE) 
+Fatal server error:
+(EE) Cannot open log file "/home/kreyren/.local/share/xorg/Xorg.1.log"
+(EE) 
+(EE) 
+Please consult the The X.Org Foundation support 
+	 at http://wiki.x.org
+ for help. 
+(EE) 
+xinit: giving up
+xinit: unable to connect to X server: Connection refused
+xinit: server error
+Couldn't get a file descriptor referring to the console
 ```
