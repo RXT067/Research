@@ -70,4 +70,4 @@ Couldn't get a file descriptor referring to the console
  - xauth?
 
 `nano /etc/portage/package.use/00-custom.use -> Segmentation fault`
-- File is present and non-corrupted -> nano broken?
+- File is present and non-corrupted -> nano broken? -> confirmed broken nano.. why?
