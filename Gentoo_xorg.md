@@ -1,6 +1,6 @@
 This is a research for xorg on Gentoo using USE="-*" on amdgpu, debugging on chroot environment.
 
-FROM ROOT
+### FROM ROOT
 ```
 sysresccd / # startx-lxqt
 /usr/bin/startx-lxqt: line 146: hostname: command not found
@@ -38,7 +38,7 @@ xinit: unable to connect to X server: Connection refused
 xinit: unexpected signal 2
 ```
 
-FROM USER:
+### FROM USER:
 ```
 startx-lxqt
 /usr/bin/startx-lxqt: line 146: hostname: command not found
@@ -68,3 +68,5 @@ Couldn't get a file descriptor referring to the console
 - system didn't change resolution once booted -> AMDGPU not loaded, confirmed in `lspci -k | grep kernel`.
  - radeonsi is disabled in grub and not loaded.
  - xauth?
+
+`nano /etc/portage/package.use/00-custom.use -> Segmentation fault` .. why?
