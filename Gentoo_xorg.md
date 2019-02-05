@@ -64,10 +64,10 @@ Couldn't get a file descriptor referring to the console
 **(EE) no screens found(EE)** is important now.
 - Kernel configuration is correct assuming that same configuration worked on profile use flags.
 - udev?
- - is emerged.. ?
+  - is emerged.. ?
 - system didn't change resolution once booted -> AMDGPU not loaded, confirmed in `lspci -k | grep kernel`.
- - radeonsi is disabled in grub and not loaded.
- - xauth?
+  - radeonsi is disabled in grub and not loaded.
+  - xauth?
 
 **nano /etc/portage/package.use/00-custom.use -> Segmentation fault**
 - File is present and non-corrupted -> nano broken? -> confirmed broken nano -> re-emerging needs optimization.. nano works in different chroot.. wth? killed broken chroot using new chroot -> re-emerging nano with optimization anyway
