@@ -72,6 +72,8 @@ Couldn't get a file descriptor referring to the console
 **xauth:  file /home/kreyren/.serverauth.16067 does not exist**
 - from https://www.starnet.com/xwin32kb/error-in-locking-authority-file/ invoked `sudo chmod 400 .Xauthority` -> same issue
 `-r--------   1 kreyren kreyren       103 Feb  5 05:37 .Xauthority` -> not a permission issue with .Xauthority
+- from https://www.linuxquestions.org/questions/slackware-14/xauth-error-in-locking-authority-file-701740/ `kreyren@sysresccd ~ $ xauth merge /home/kreyren/.Xauthority` -> `xauth:  timeout in locking authority file /root/.Xauthority`
+
 
 
 **nano /etc/portage/package.use/00-custom.use -> Segmentation fault**
