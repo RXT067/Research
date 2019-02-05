@@ -76,7 +76,7 @@ Couldn't get a file descriptor referring to the console
 - from https://www.linuxquestions.org/questions/slackware-14/xauth-error-in-locking-authority-file-701740/ `kreyren@sysresccd ~ $ xauth merge /home/kreyren/.Xauthority` -> `xauth:  timeout in locking authority file /root/.Xauthority` -> can't find relevant source
 
 ##### (EE) parse_vt_settings: Cannot open /dev/tty0 (Permission denied)
-- created `/etc/X11/Xwrapper.config` with `allowed_users=console`.
+- created `/etc/X11/Xwrapper.config` with `allowed_users=console` -> same issue
 
 
 ##### nano /etc/portage/package.use/00-custom.use -> Segmentation fault
