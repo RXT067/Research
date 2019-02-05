@@ -1,4 +1,4 @@
-This is a research for xorg on Gentoo using USE="-*" on amdgpu.
+This is a research for xorg on Gentoo using USE="-*" on amdgpu, debugging on chroot environment.
 
 FROM ROOT
 ```
@@ -43,4 +43,5 @@ FROM USER:
 startx-lxqt
 /usr/bin/startx-lxqt: line 146: hostname: command not found
 xauth:  error in locking authority file /home/kreyren/.serverauth.4116
+xauth:  timeout in locking authority file /root/.Xauthority
 ```
