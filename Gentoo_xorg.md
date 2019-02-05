@@ -78,6 +78,7 @@ Couldn't get a file descriptor referring to the console
 ##### (EE) parse_vt_settings: Cannot open /dev/tty0 (Permission denied)
 - from https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=856351 https://www.systutorials.com/docs/linux/man/5-Xwrapper.config/ created `/etc/X11/Xwrapper.config` with `allowed_users=console` -> same issue 
   - `allowed_users=anybody` (seems insane) -> same issue
+  - Removed `Xwrapper.config`
   
 ```
 kreyren@sysresccd ~ $ startx
