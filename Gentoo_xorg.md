@@ -126,5 +126,5 @@ xinit: unexpected signal 2
 ##### nano /etc/portage/package.use/00-custom.use -> Segmentation fault
 - File is present and non-corrupted -> nano broken? -> confirmed broken nano -> re-emerging needs optimization.. nano works in different chroot.. wth? killed broken chroot using new chroot -> re-emerging nano with optimization anyway
 - `app-editors/nano magic spell unicode nls ncurses` is set in `package.use` and nano is reemerged.
-SOLVED
+- SOLVED
 
