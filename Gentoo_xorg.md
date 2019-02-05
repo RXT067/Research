@@ -70,4 +70,4 @@ Couldn't get a file descriptor referring to the console
  - xauth?
 
 `nano /etc/portage/package.use/00-custom.use -> Segmentation fault`
-- File is present and non-corrupted -> nano broken? -> confirmed broken nano.. why?
+- File is present and non-corrupted -> nano broken? -> confirmed broken nano -> re-emerging needs optimization.. nano works in different chroot.. wth? killed broken chroot using new chroot -> re-emerging nano with optimization anyway
