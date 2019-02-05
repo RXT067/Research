@@ -60,3 +60,11 @@ xinit: unable to connect to X server: Connection refused
 xinit: server error
 Couldn't get a file descriptor referring to the console
 ```
+
+**(EE) no screens found(EE)** is important now.
+- Kernel configuration is correct assuming that same configuration worked on profile use flags.
+- udev?
+ - is emerged.. ?
+- system didn't change resolution once booted -> AMDGPU not loaded, confirmed in `lspci -k | grep kernel`.
+ - radeonsi is disabled in grub and not loaded.
+ - xauth?
