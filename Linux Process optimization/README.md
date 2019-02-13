@@ -2,6 +2,8 @@ Concept: Allow me gaming on gentoo while emerge is chooching packages
 
 Expected: if 'important app' needs system resources -> share them untill it's satisfied -> share waste across other processes.
 
+---
+
 ## SCHEDULERS
 - Con Kolivas' MuQSS process scheduler.
 - Completely Fair Scheduler
@@ -11,6 +13,8 @@ _NO-INFO_
 
 ### Completely Fair Scheduler
 _Present by default on most kernels_
+
+---
 
 ## ADDITIONAL INFORMATIONS
 Lower your MAKEOPTS -> unemergefull, would cause slow compilation and affect 'important app'.
