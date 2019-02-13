@@ -11,10 +11,17 @@ Expected: if 'important app' needs system resources -> share them untill it's sa
 ### Con Kolivas' MuQSS process scheduler
 _NO-INFO_
 
+
+
+
 ### Completely Fair Scheduler
 _Present by default on most kernels_
 
----
+#### References 
+- https://cs.wikipedia.org/wiki/Completely_Fair_Scheduler
+- https://en.wikipedia.org/wiki/Completely_Fair_Scheduler
+- https://www.kernel.org/doc/Documentation/scheduler/sched-design-CFS.txt
+- https://www.linuxjournal.com/node/10267
 
 ## ADDITIONAL INFORMATIONS
 Lower your MAKEOPTS -> unemergefull, would cause slow compilation and affect 'important app'.
