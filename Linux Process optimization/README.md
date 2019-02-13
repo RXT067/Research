@@ -14,8 +14,15 @@ _NO-INFO_
 
 
 
-### Completely Fair Scheduler
-_Present by default on most kernels_
+### Completely Fair Scheduler (CFS)
+_Present by default on most kernels_ (based on wikipedia)
+
+Uses sched_entity
+
+`chrt` command in linux
+- it manages SCHED_* variables that are recognized in linux(?)
+- Linux kernel has a scheduler - TODO: find a corresponding kernel configuration
+  - is controlled by SCHED_* variables
 
 #### References 
 - https://cs.wikipedia.org/wiki/Completely_Fair_Scheduler
@@ -39,14 +46,6 @@ PORTAGE_NICENESS="19" is not sufficient assuming problem with a RAM -> if game n
 https://en.wikipedia.org/wiki/Cgroups
 
 Developed by google ppl
-
-
-
-### SCHED
-`chrt` command in linux
-- it manages SCHED_* variables that are recognized in linux(?)
-- Linux kernel has a scheduler - TODO: find a corresponding kernel configuration
-  - is controlled by SCHED_* variables
 
 
 
