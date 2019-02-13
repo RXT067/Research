@@ -24,6 +24,8 @@ Uses sched_entity
 - Linux kernel has a scheduler - TODO: find a corresponding kernel configuration
   - is controlled by SCHED_* variables
 
+I have no hugging idea what does the kernel.org documentation is trying to say
+
 #### References 
 - https://cs.wikipedia.org/wiki/Completely_Fair_Scheduler
 - https://en.wikipedia.org/wiki/Completely_Fair_Scheduler
