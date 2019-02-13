@@ -55,3 +55,7 @@ kreyren@linux-n6tn:~>
 Solution is to blacklist radeon from loading since radeon doesn't support vulkan and is used for MESA on OpenGL only..
 
 Reproducable always on AMD7870 GPU
+
+## Lutris is broken in OpenSUSE
+
+https://github.com/PhoenicisOrg/scripts/pull/783#issuecomment-463306885
