@@ -12,7 +12,8 @@ Expected: if 'important app' needs system resources -> share them untill it's sa
 _NO-INFO_
 
 
-
+#### References
+- http://ck.kolivas.org/patches/muqss/sched-MuQSS.txt?fbclid=IwAR00BNBnMg02Wv2MzqWzKDJsIUGNmw6IXEAJOMjoyjIGEfP7gnAiqQoaHMg
 
 ### Completely Fair Scheduler (CFS)
 _Present by default on most kernels_ (based on wikipedia)
