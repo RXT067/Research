@@ -23,6 +23,8 @@ _Present by default on most kernels_
 - https://www.kernel.org/doc/Documentation/scheduler/sched-design-CFS.txt
 - https://www.linuxjournal.com/node/10267
 
+---
+
 ## ADDITIONAL INFORMATIONS
 Lower your MAKEOPTS -> unemergefull, would cause slow compilation and affect 'important app'.
 
