@@ -1,0 +1,4 @@
+<01> https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+<01> also, one blank line before Signed-off-by
+<01> kreyren: man git-commit; look for -s or --signoff
+<02> kreyren: the git-commit manpage is available at https://gitirc.eu/git-commit.html
