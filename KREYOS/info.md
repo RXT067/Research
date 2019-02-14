@@ -16,6 +16,7 @@ Language for terminal?
 - FISH?
   - Supperior to bash?
 - ZSH?
+  - Supperior to FISH+BASH?
 
 ### Blodwen
 is cool? Quantitative Type Theory?
