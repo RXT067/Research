@@ -11,6 +11,10 @@ TODO: Method to resolve conflicts with packages<br>
 Do i want to greb rpm, etc.. that is used by apt?
 - Fork OpenBuildSystem by OpenSUSE?
 
+Language for terminal?
+- BASH?
+- FISH?
+
 ### Blodwen
 is cool? Quantitative Type Theory?
 
