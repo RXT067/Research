@@ -2,6 +2,11 @@
 
 Make a LFS/Redox-based OS that is supperior to gentoo with package manager supperior to portage and apt  combined
 
+TODO: Make a system for downstream compatibility<br>
+TODO: Make P2P compilation<br>
+TODO: USEFLAG-like feature<br>
+TODO: Method to resolve conflicts with packages<br>
+
 ### Blodwen
 is cool? Quantitative Type Theory?
 
