@@ -14,6 +14,8 @@ Do i want to greb rpm, etc.. that is used by apt?
 Language for terminal?
 - BASH?
 - FISH?
+  - Supperior to bash?
+- ZSH?
 
 ### Blodwen
 is cool? Quantitative Type Theory?
