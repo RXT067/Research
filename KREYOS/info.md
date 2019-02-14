@@ -26,7 +26,7 @@ Compiler faster then C++ in some scenarios, in thoery already faster?
 
 Redox OS is unix-like
 - There is a problem with distribution of drivers since it's not popular like linux.
- - Solved by learning how to make a driver for it?
+  - Solved by learning how to make a driver for it?
 
 ### C++
 BOOORIIING
