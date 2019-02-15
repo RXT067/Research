@@ -45,6 +45,13 @@ BOOORIIING, but probably most effective
 ### ldris
 eh?
 
+`it's not amazing for building an OS right now since it requires GC` ???
+
+`an option is to use Idris for generating C/ASM code from a well-typed DSL rather than Idris directly with it's runtime This should provide a hint as to how the codegen could be implemented along with the idris documentation on well-typed interpreters http://www.stephendiehl.com/posts/monads_machine_code.html`
+
+`Idris is currently a managed language so you'll get GC regardless though linear types may change that (I don't know which direction EB will go with it). If you want to play with GC less now there's always ATS but I suggest learning the basics of using dependent types in Idris before that.`
+
+
 
 ##### Relevant
 - https://github.com/mesalock-linux/mkpkg
