@@ -11,7 +11,7 @@ TODO: Method to resolve conflicts with packages<br>
 Do i want to greb rpm, etc.. that is used by apt?
 - Fork OpenBuildSystem by OpenSUSE?
 
-Language for terminal?
+scripting lang for terminal?
 - BASH?
 - FISH?
   - Supperior to bash?
