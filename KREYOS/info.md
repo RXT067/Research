@@ -40,7 +40,7 @@ Redox OS is unix-like
   - Solved by learning how to make a driver for it?
 
 ### C++
-BOOORIIING
+BOOORIIING, but probably most effective
 
 ### ldris
 eh?
