@@ -51,7 +51,9 @@ eh?
 
 `Idris is currently a managed language so you'll get GC regardless though linear types may change that (I don't know which direction EB will go with it). If you want to play with GC less now there's always ATS but I suggest learning the basics of using dependent types in Idris before that.`
 
+### GO
 
+`Golang works really well for munging and interacting with templates, I also am not a fan of it and think it's overused.` - facebook user
 
 ##### Relevant
 - https://github.com/mesalock-linux/mkpkg
