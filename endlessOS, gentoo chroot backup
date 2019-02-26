@@ -1,0 +1,89 @@
+From my point of view EndlessOS is piece of garbage that should be renamed on LimitedOS since uses only flatpaks that are on the long way to go to be usable reasoning:
+- Winepaks are not usable and abadoned
+- Phoenicis is currently in alpha so games from it are unreliable
+- Lutris doesn't have flatpak yet
+- It's impossible to install WINE on EndlessOS since it doesn't have compiler and getting one working on it is pita since it's using ostree file hierarchy, because standarts are for nubs.
+
+So i decided to share a guide to get those apps working on endless using gentoo chroot.
+Disclaimer: You are performing this procedure on your own free will and i'm not responsible for anything.
+
+Proof-of-Concept: 
+https : // i . imgur . com/93XgqnL.png
+
+Terminology:
+- EndlessOS == Host
+- Gentoo Linux == Guest
+- non-root == output of `echo $UID` is not `0`
+- root == output of `echo $UID` is `0`
+in this scenario
+
+1) Make a new directory in /mnt (will use /mnt/gentoo in this example)
+2) Go on gentoo . org/downloads/ and grab download url for your architecture
+3) Download stage3 into /mnt/gentoo.
+4) Make a new file in /mnt/gentoo (will use `chrootme` in this example)
+5) Parse following in chrootme:
+```bash
+#!/bin/bash
+mount --rbind /dev /mnt/gentoo/dev
+mount --make-rslave /mnt/gentoo/dev
+mount -t proc /proc /mnt/gentoo/proc
+mount --rbind /sys /mnt/gentoo/sys
+mount --make-rslave /mnt/gentoo/sys
+mount --rbind /tmp /mnt/gentoo/tmp
+chroot /mnt/gentoo /bin/bash
+```
+This is going to mount required filesystems and chroot into /mnt/gentoo meaning that you will be able to access gentoo on /mnt/gentoo using terminal simmilar to virtualbox.
+
+Make it executable using `chmod`
+6) Create a new alias in $HOME/.bashrc for `chroot /mnt/gentoo`
+Example:
+```
+alias ge="chroot /mnt/gentoo"
+```
+Now if you invoke `ge something`  that something will be invoked on guest from host.
+7) invoke /mnt/gentoo/chrootme as root.
+8) Install required packages on gentoo:
+```bash
+# Install Layman, xorg and lutris
+## Layman is used to manage gentoo overlays to get bobwya's wine
+EMERGE_DEFAULTS_OPTS="--autounmask-write --quiet --jobs" emerge layman xorg-x11 lutris
+# Add bobwya's wine using layman
+layman -S  && layman -a bobwya
+# Install bobwya's wine
+## List of packages here 
+github . com/bobwya/bobwya/tree/master/app-emulation/wine-staging
+## We will install wine-staging-4.2_p1::bobwya
+EMERGE_DEFAULTS_OPTS="--autounmask-write --quiet --jobs" emerge =wine-staging-4.2_p1::bobwya
+```
+
+If you encounter problems with changes to /etc/portage alike:
+<img src="/uploads/default/original/2X/4/4a2c841999c82767e88b6e4c4fa935434024f54a.jpg" width="476" height="323">
+
+Invoke `dispatch-conf` on guest and follow up with `use-new` in TUI (Terminal User Interface), then reinvoke emerge command.
+9) Make a new user on guest.
+We will use `minion` for a user in this example:
+```useradd -m -G users,wheel,audio,video -s /bin/bash minion```
+10) grab .Xauthority file from host
+We need .Xauthority for xorg to see a new display.
+```xauth list $DISPLAY``` on host
+
+```xauth extract /mnt/gentoo/home/minion/.Xauthority endless/unix:0```
+
+Change `endless/unix:0` based on output from `xauth list..` if needed
+
+`xauth extract` needs to reinvoked after each restart for some reason(?)
+
+11) You should be all set.
+For sake of demonstration we will open up league of legends on endless now
+
+Download League of Legeds in /mnt/gentoo/home/minion/Downloads and rename it on something without spaces like lolinstall.exe
+
+on guest invoke `su minion` to swich into a non-root
+
+Invoke `wine /home/minion/Downloads/lolinstall.exe` on guest as non-root
+
+
+**Troubleshooting:** 
+*Will be added on demand.*
+
+Feel free to join https://discord.gg/bQHrGP or contact kreyren (me) on irc.freenode.org with questions.
