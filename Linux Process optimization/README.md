@@ -50,6 +50,8 @@ https://en.wikipedia.org/wiki/Cgroups
 
 Developed by google ppl
 
+A control group (abbreviated as cgroup) is a collection of processes that are bound by the same criteria and associated with a set of parameters or limits. These groups can be hierarchical, meaning that each group inherits limits from its parent group. The kernel provides access to multiple controllers (also called subsystems) through the cgroup interface;[2] for example, the "memory" controller limits memory use, "cpuacct" accounts CPU usage, etc.
+
 
 
 
