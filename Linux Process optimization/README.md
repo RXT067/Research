@@ -9,8 +9,7 @@ Expected: if 'important app' needs system resources -> share them untill it's sa
 - Completely Fair Scheduler
 
 ### Con Kolivas' MuQSS process scheduler
-_NO-INFO_
-
+Scales across all threads -> helps with freezes that are present on CFS.
 
 #### References
 - http://ck.kolivas.org/patches/muqss/sched-MuQSS.txt?fbclid=IwAR00BNBnMg02Wv2MzqWzKDJsIUGNmw6IXEAJOMjoyjIGEfP7gnAiqQoaHMg
