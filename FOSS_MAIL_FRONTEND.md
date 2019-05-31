@@ -5,6 +5,7 @@ Based on suggestions from https://www.facebook.com/groups/GNUAndLinux/1016224779
 ### Rainloop
 
 ### Roundcube
+Used by LunarPages (?)
 
 ### Tutonota (https://github.com/tutao/tutanota)
 
