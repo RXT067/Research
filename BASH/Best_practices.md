@@ -1,0 +1,3 @@
+# Never use ${var} use "$var"
+
+31.05.2019 19:11:22 in irc.freenode.org/#bash - greycat (Creater of https://mywiki.wooledge.org/GreyCat) a bunch of idiots have somehow latched on to the idea that if you write ${foo} you don't need to quote it, which is absolutely wrong
