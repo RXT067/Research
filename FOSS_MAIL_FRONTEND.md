@@ -16,4 +16,4 @@ Used on unseen.it
 is not FOSS (?)
 
 ### mailpile?
-https://www.mailpile.is/
+https://github.com/mailpile/Mailpile
