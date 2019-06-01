@@ -14,3 +14,6 @@ Used on unseen.it
 
 ### Protonmail 
 is not FOSS (?)
+
+### mailpile?
+https://www.mailpile.is/
