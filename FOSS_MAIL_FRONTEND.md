@@ -17,3 +17,5 @@ is not FOSS (?)
 
 ### mailpile?
 https://github.com/mailpile/Mailpile
+
+### owncloud?
