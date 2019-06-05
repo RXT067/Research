@@ -19,3 +19,6 @@ is not FOSS (?)
 https://github.com/mailpile/Mailpile
 
 ### owncloud?
+
+### Hubzilla
+hubzilla.org, looks cool
