@@ -10,8 +10,12 @@ Seems that this air is beeing trapped in the invidual parts of the brain which n
 
 ---
 
-Infection - Human body 
+Dull pain and feeling of "beeing unwell" - Human body seems to increase a body temperature to deal with the infection.
 
+Increasing enviromental temperature seems to have positive effect on said pain where hot bath seems to be the most effective. 
 
+Painkillers seems to have negative effect on the issue which needs verification.
 
-- Assumption of higher quantity of magnesium.
+---
+
+Assumption of higher quantity of magnesium.
