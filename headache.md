@@ -16,9 +16,9 @@ Seems that this air is beeing trapped in the invidual parts of the brain which n
 
 ---
 
-### Dull pain and feeling of "beeing unwell"
+### Dull pain and nausea
 
-Dull pain and feeling of "beeing unwell" - Human body seems to increase a body temperature to deal with the infection.
+Dull pain and nausea - Human body seems to increase a body temperature to deal with the infection.
 
 Increasing enviromental temperature seems to have positive effect on said pain where hot bath seems to be the most effective. 
 
@@ -34,4 +34,8 @@ Changing pillow and stretching said muscles might have positive effect on the pa
 
 ---
 
-Assumption of higher quantity of magnesium.
+### Assumption of higher quantity of magnesium.
+
+Assumption of higher quantity of magnesium (110~130% of recommended daily consumption) seems to cause headache and nausea with dull stomachache. This doesn't seem to be lethal, but annoying. 
+
+---
