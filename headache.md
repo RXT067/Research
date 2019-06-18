@@ -2,6 +2,8 @@ This is a personal research to gather informations about causes of headache base
 
 Not to be used for training.
 
+If you have a different opinion on info provided then i encourage you to make a merge request with explanation for change.
+
 ---
 
 ### Dull pain and feeling of pressure
