@@ -7,3 +7,5 @@
 ## Ideopathy (Ideopaticke)
 - TLDR: Reason to X is unknown
 
+## Lupus
+- TLDR: Autoimmune illness that makes the immune system to attack host's tissue 
