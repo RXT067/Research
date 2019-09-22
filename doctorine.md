@@ -9,3 +9,6 @@
 
 ### Lupus
 - TLDR: Autoimmune illness that makes the immune system to attack host's tissue 
+
+### Nephritis (Nefritida)
+- TLDR: Zanet ledvin
