@@ -15,4 +15,6 @@
 
 ## Making clever latin words so that patient doesn't freak out when you talk about them
 
-### Hypo = Low
+### Hypo- = Low
+
+### -Emia = Presence in blood
